@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swrdfgd - Personal Hub</title>
+    <style>
+        /* CSS Variables untuk kemudahan mengubah tema warna */
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+            --card-hover: #334155;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        /* Bagian Header / Profile */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 1.15rem;
+            margin-bottom: 50px;
+            color: #cbd5e1;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Grid Layout untuk Kotak Link (Sangat Responsif) */
+        .projects-grid {
+            display: grid;
+            /* Membaca ukuran layar dan menyesuaikan jumlah kolom secara otomatis */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* Desain Kartu (Card) */
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 160px;
+            border: 1px solid var(--border-color);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            background-color: var(--card-hover);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            color: #94a3b8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Penyesuaian khusus untuk layar HP kecil */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .about {
+                font-size: 1rem;
+            }
+            .container {
+                padding: 30px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Bagian Perkenalan -->
+        <header>
+            <h1>Hi, I'm swrdfgd</h1>
+            <p class="about">
+                Welcome to my digital space! I am a passionate creator and web explorer. 
+                I love building interesting projects, collecting knowledge, and organizing the random things I find across the internet. 
+                Feel free to explore my realms below.
+            </p>
+        </header>
+
+        <!-- Kumpulan Link -->
+        <main>
+            <div class="projects-grid">
+                
+                <!-- Link 1 -->
+                <a href="https://swrdfgd.github.io/KiankoLand/" class="project-card" target="_blank" rel="noopener noreferrer">
+                    <div class="project-title">Kianko Land</div>
+                    <div class="project-desc">Step into my creative and interactive digital realm.</div>
+                </a>
+
+                <!-- Link 2 -->
+                <a href="https://swrdfgd.github.io/LandOfKnowledge/" class="project-card" target="_blank" rel="noopener noreferrer">
+                    <div class="project-title">Land of Knowledge</div>
+                    <div class="project-desc">A repository of insights, notes, and continuous learning.</div>
+                </a>
+
+                <!-- Link 3 -->
+                <a href="https://swrdfgd.github.io/RandomWebsite/" class="project-card" target="_blank" rel="noopener noreferrer">
+                    <div class="project-title">Random Website Lists</div>
+                    <div class="project-desc">A curated collection of interesting, weird, and useful websites.</div>
+                </a>
+
+                <!-- Link 4 -->
+                <a href="https://swrdfgd.github.io/mathZpace" class="project-card" target="_blank" rel="noopener noreferrer">
+                    <div class="project-title">mathZpace</div>
+                    <div class="project-desc">Dive into the logical and fascinating world of mathematics.</div>
+                </a>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 swrdfgd. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
