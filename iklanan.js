@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/970x90/simple_v1.gif" alt="Advertise with Anonymous Ads" width="970px" height="90px" /></a>`,
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/970x250/simple_v1.gif" alt="Advertise with Anonymous Ads" width="970px" height="250px" /></a>`,
 			],
+			[
+			`<!-- BEGIN AADS AD UNIT 2450840 --> <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;"> <iframe data-aa='2450840' src='//acceptable.a-ads.com/2450840/?size=Adaptive' style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe> </div> <!-- END AADS AD UNIT 2450840 -->`,
+			]
         ];
 
         // 2. Array khusus untuk iklan Vertikal
@@ -29,8 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/300x250/simple_v1.gif" alt="Advertise with Anonymous Ads" width="300px" height="250px" /></a>`,
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/300x600/simple_v1.gif" alt="Advertise with Anonymous Ads" width="300px" height="600px" /></a>`,
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/336x280/simple_v1.gif" alt="Advertise with Anonymous Ads" width="336px" height="280px" /></a>`,
-			
 			],
+			[
+			`<!-- BEGIN AADS AD UNIT 2450840 --> <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;"> <iframe data-aa='2450840' src='//acceptable.a-ads.com/2450840/?size=Adaptive' style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe> </div> <!-- END AADS AD UNIT 2450840 -->`,
+			]
 		];
 
     // 2. Jika ada elemen yang ditemukan, jalankan proses untuk masing-masing elemen
