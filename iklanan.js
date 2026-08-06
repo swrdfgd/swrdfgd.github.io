@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const elemenIklan = document.getElementById("iklanan");
-
-    if (elemenIklan) {
-        // Ambil nilai format dari HTML (horizontal / vertikal)
-        const formatIklan = elemenIklan.getAttribute("data-format");
+    // Cari SEMUA elemen yang memiliki class "iklanan"
+    const semuaElemenIklan = document.querySelectorAll(".iklanan");
 
         // 1. Array khusus untuk iklan Horizontal
         const iklanHorizontal = [
@@ -36,29 +33,33 @@ document.addEventListener("DOMContentLoaded", function() {
 			],
 		];
 
-        // Variabel penampung array yang akan dipilih
-        let arrayPilihan = [];
+    // 2. Jika ada elemen yang ditemukan, jalankan proses untuk masing-masing elemen
+    if (semuaElemenIklan.length > 0) {
+        semuaElemenIklan.forEach(function(elemen) {
+            
+            // Ambil format dari elemen yang sedang diproses
+            const formatIklan = elemen.getAttribute("data-format");
+            let arrayPilihan = [];
 
-        // 3. Tentukan array mana yang dipakai berdasarkan atribut HTML
-        if (formatIklan === "horizontal") {
-            arrayPilihan = iklanHorizontal;
-        } else if (formatIklan === "vertikal") {
-            arrayPilihan = iklanVertikal;
-        } else {
-            // Jika atribut kosong atau salah ketik
-            console.warn("Format iklan tidak valid atau tidak ditemukan.");
-            return; // Hentikan proses
-        }
+            // Tentukan array mana yang dipakai
+            if (formatIklan === "horizontal") {
+                arrayPilihan = iklanHorizontal;
+            } else if (formatIklan === "vertikal") {
+                arrayPilihan = iklanVertikal;
+            } else {
+                console.warn("Class 'iklanan' ditemukan, tapi data-format tidak valid/kosong.");
+                return; // Lanjut ke elemen berikutnya
+            }
 
-        // 4. Pilih iklan secara acak dari array yang terpilih
-        if (arrayPilihan.length > 0) {
-            const indeksAcak = Math.floor(Math.random() * arrayPilihan.length);
-			const iklanPilihan = arrayPilihan[indeksAcak];
-			const indeksAcak2 = Math.floor(Math.random() * iklanPilihan.length);
-            elemenIklan.innerHTML = iklanPilihan[indeksAcak2];
-        }
-
+            // Pilih iklan acak dan masukkan ke elemen tersebut
+            if (arrayPilihan.length > 0) {
+				const indeksAcak = Math.floor(Math.random() * arrayPilihan.length);
+				const iklanPilihan = arrayPilihan[indeksAcak];
+				const indeksAcak2 = Math.floor(Math.random() * iklanPilihan.length);
+				elemen.innerHTML = iklanPilihan[indeksAcak2];
+            }
+        });
     } else {
-        console.warn("Elemen dengan id 'iklanan' tidak ditemukan.");
+        console.warn("Tidak ada elemen dengan class 'iklanan' di halaman ini.");
     }
 });
