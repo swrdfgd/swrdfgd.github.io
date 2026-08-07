@@ -77,6 +77,13 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://ref.adbtc.top/1403330" target="_blank" border="0"><img src="https://adbtc.top/promo/banner_250x250.png"/></a>`,
 			`<a href="https://ref.adbtc.top/1403330" target="_blank" border="0"><img src="https://adbtc.top/promo/banner_728x90_2.png"/></a>`,
 			],
+			[`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM-728x90.gif" alt="Earnbitmoon" border="0" /></a>`,
+			`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM_shiba_728.gif" alt="Earnbitmoon" border="0" /></a>`,
+			`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM-468x60.gif" alt="Earnbitmoon" border="0" /></a>`,
+			`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM-300x250.gif" alt="Earnbitmoon" border="0" /></a>`,
+			`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM_shiba_300.gif" alt="Earnbitmoon" border="0" /></a>`,
+			
+			],
         ];
 
         // 2. Array khusus untuk iklan Vertikal
@@ -133,6 +140,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<!--Start rollercoin.com code--> <a href="https://rollercoin.com/?r=jy4kc2py"> <img src="https://static.rollercoin.com/static/img/ref/gen3/w300h1050.gif" alt="300h1050"/> </a> <!--End rollercoin.com code-->`,
 			],
 			[`<a href="https://ref.adbtc.top/1403330" target="_blank" border="0"><img src="https://adbtc.top/promo/banner_250x250.png"/></a>`,
+			],
+			[`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM-300x250.gif" alt="Earnbitmoon" border="0" /></a>`,
+			`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM_shiba_300.gif" alt="Earnbitmoon" border="0" /></a>`,
+			`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM-160x600.gif" alt="Earnbitmoon" border="0" /></a>`,
 			],
 		];
 
