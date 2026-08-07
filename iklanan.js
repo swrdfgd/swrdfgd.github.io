@@ -82,7 +82,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM-468x60.gif" alt="Earnbitmoon" border="0" /></a>`,
 			`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM-300x250.gif" alt="Earnbitmoon" border="0" /></a>`,
 			`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM_shiba_300.gif" alt="Earnbitmoon" border="0" /></a>`,
-			
+			],
+			[`<a href="https://viefaucet.com?r=6a75dd59ceaac88d244f0894" target="_blank" rel="noopener noreferrer"> <img src="https://viefaucet.com/banners/300x250.gif" alt="Vie Faucet Banner" width="300" height="250" style="border: none;" /> </a>`,
 			],
         ];
 
@@ -144,6 +145,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			[`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM-300x250.gif" alt="Earnbitmoon" border="0" /></a>`,
 			`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM_shiba_300.gif" alt="Earnbitmoon" border="0" /></a>`,
 			`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM-160x600.gif" alt="Earnbitmoon" border="0" /></a>`,
+			],
+			[`<a href="https://viefaucet.com?r=6a75dd59ceaac88d244f0894" target="_blank" rel="noopener noreferrer"> <img src="https://viefaucet.com/banners/300x250.gif" alt="Vie Faucet Banner" width="300" height="250" style="border: none;" /> </a>`,
 			],
 		];
 
