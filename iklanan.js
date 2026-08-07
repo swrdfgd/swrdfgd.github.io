@@ -72,6 +72,11 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<!--Start rollercoin.com code--> <a href="https://rollercoin.com/?r=jy4kc2py"> <img src="https://static.rollercoin.com/static/img/ref/gen2/w970h250.gif" alt="970h250"/> </a> <!--End rollercoin.com code-->`,
 			`<!--Start rollercoin.com code--> <a href="https://rollercoin.com/?r=jy4kc2py"> <img src="https://static.rollercoin.com/static/img/ref/gen3/w970h250.gif" alt="970h250"/> </a> <!--End rollercoin.com code-->`,
 			],
+			[`<a href="https://ref.adbtc.top/1403330" target="_blank" border="0"><img src="https://adbtc.top/promo/banner_728x90.png"/></a>`,
+			`<a href="https://ref.adbtc.top/1403330" target="_blank" border="0"><img src="https://adbtc.top/promo/banner_468x60.jpg"/></a>`,
+			`<a href="https://ref.adbtc.top/1403330" target="_blank" border="0"><img src="https://adbtc.top/promo/banner_250x250.png"/></a>`,
+			`<a href="https://ref.adbtc.top/1403330" target="_blank" border="0"><img src="https://adbtc.top/promo/banner_728x90_2.png"/></a>`,
+			],
         ];
 
         // 2. Array khusus untuk iklan Vertikal
@@ -126,7 +131,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<!--Start rollercoin.com code--> <a href="https://rollercoin.com/?r=jy4kc2py"> <img src="https://static.rollercoin.com/static/img/ref/gen3/w300h600.gif" alt="300h600"/> </a> <!--End rollercoin.com code-->`,
 			`<!--Start rollercoin.com code--> <a href="https://rollercoin.com/?r=jy4kc2py"> <img src="https://static.rollercoin.com/static/img/ref/gen2/w300h1050.gif" alt="300h1050"/> </a> <!--End rollercoin.com code-->`,
 			`<!--Start rollercoin.com code--> <a href="https://rollercoin.com/?r=jy4kc2py"> <img src="https://static.rollercoin.com/static/img/ref/gen3/w300h1050.gif" alt="300h1050"/> </a> <!--End rollercoin.com code-->`,
-			
+			],
+			[`<a href="https://ref.adbtc.top/1403330" target="_blank" border="0"><img src="https://adbtc.top/promo/banner_250x250.png"/></a>`,
 			],
 		];
 
