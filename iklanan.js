@@ -85,6 +85,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			],
 			[`<a href="https://viefaucet.com?r=6a75dd59ceaac88d244f0894" target="_blank" rel="noopener noreferrer"> <img src="https://viefaucet.com/banners/300x250.gif" alt="Vie Faucet Banner" width="300" height="250" style="border: none;" /> </a>`,
 			],
+			[`<a href="https://indodax.com/ref/Swordofgod/1" target="_blank"> <img src="https://swrdfgd.github.io/indodax/horizontal-688x384.jpg" alt="Indodax Banner" width="688" height="384" style="border: none;" /> </a>`,
+			`<a href="https://indodax.com/ref/Swordofgod/1" target="_blank"> <img src="https://swrdfgd.github.io/indodax/persegi-512x512.jpg" alt="Indodax Banner" width="512" height="512" style="border: none;" /> </a>`,
+			],
         ];
 
         // 2. Array khusus untuk iklan Vertikal
@@ -147,6 +150,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://earnbitmoon.club/?ref=1314309" target="_blank"><img src="https://earnbitmoon.club/promo/EBM-160x600.gif" alt="Earnbitmoon" border="0" /></a>`,
 			],
 			[`<a href="https://viefaucet.com?r=6a75dd59ceaac88d244f0894" target="_blank" rel="noopener noreferrer"> <img src="https://viefaucet.com/banners/300x250.gif" alt="Vie Faucet Banner" width="300" height="250" style="border: none;" /> </a>`,
+			],
+			[`<a href="https://indodax.com/ref/Swordofgod/1" target="_blank"> <img src="https://swrdfgd.github.io/indodax/vertikal-384x688.jpg" alt="Indodax Banner" width="384" height="688" style="border: none;" /> </a>`,
+			`<a href="https://indodax.com/ref/Swordofgod/1" target="_blank"> <img src="https://swrdfgd.github.io/indodax/persegi-512x512.jpg" alt="Indodax Banner" width="512" height="512" style="border: none;" /> </a>`,
 			],
 		];
 
