@@ -60,7 +60,74 @@
             margin-left: auto;
             margin-right: auto;
         }
+		/* --- CSS UNTUK FITUR SEARCH --- */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            position: relative;
+            text-align: left;
+        }
 
+        #searchInput {
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        #searchInput:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+        }
+
+        #searchResults {
+            margin-top: 10px;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            display: none; 
+            position: absolute; 
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+
+        .search-item {
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: block;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .search-item:last-child {
+            border-bottom: none;
+        }
+
+        .search-item:hover {
+            background-color: var(--card-hover);
+        }
+
+        .search-title {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: block;
+        }
+
+        .search-url {
+            color: #94a3b8;
+            font-size: 0.8rem;
+            display: block;
+            margin-top: 3px;
+        }
         /* Grid Layout untuk Kotak Link (Sangat Responsif) */
         .projects-grid {
             display: grid;
@@ -138,6 +205,11 @@
                 I love building interesting projects, collecting knowledge, and organizing the random things I find across the internet. 
                 Feel free to explore my realms below.
             </p>
+			<!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search something...">
+                <div id="searchResults"></div>
+            </div>
         </header>
 
         <!-- Kumpulan Link -->
@@ -211,5 +283,70 @@
         </footer>
         -->
     </div>
+	
+<!-- SCRIPT UNTUK FUNGSI PENCARIAN -->
+    <script>
+        // Masukkan semua link Anda di sini
+        const allLinks = [
+            { title: "Kianko Land", url: "https://swrdfgd.github.io/KiankoLand/" },
+            { title: "Land of Knowledge", url: "https://swrdfgd.github.io/LandOfKnowledge/" },
+            { title: "Random Website Lists", url: "https://swrdfgd.github.io/RandomWebsite/" },
+            { title: "mathZpace", url: "https://swrdfgd.github.io/mathZpace" },
+            { title: "Random YouTube Video Generator", url: "https://swrdfgd.github.io/RandomYoutubeVideos/" },
+            { title: "Random Quran Verse", url: "https://swrdfgd.github.io/RandomQuranVerse/" },
+            { title: "Random English Words", url: "https://random-english-words.blogspot.com/" },
+        ];
+
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            searchResults.innerHTML = ''; 
+
+            if (query.trim() === '') {
+                searchResults.style.display = 'none';
+                return;
+            }
+
+            const filteredLinks = allLinks.filter(item => 
+                item.title.toLowerCase().includes(query) || 
+                item.url.toLowerCase().includes(query)
+            );
+
+            if (filteredLinks.length > 0) {
+                searchResults.style.display = 'block'; 
+
+                filteredLinks.forEach(item => {
+                    const a = document.createElement('a');
+                    a.href = item.url;
+                    a.target = "_blank"; 
+                    a.className = 'search-item';
+
+                    const titleSpan = document.createElement('span');
+                    titleSpan.className = 'search-title';
+                    titleSpan.textContent = item.title;
+
+                    const urlSpan = document.createElement('span');
+                    urlSpan.className = 'search-url';
+                    urlSpan.textContent = item.url;
+
+                    a.appendChild(titleSpan);
+                    a.appendChild(urlSpan);
+
+                    searchResults.appendChild(a);
+                });
+            } else {
+                searchResults.style.display = 'none';
+            }
+        });
+
+        // Menyembunyikan hasil pencarian jika klik di luar kotak
+        document.addEventListener('click', function(event) {
+            if (!searchInput.contains(event.target) && !searchResults.contains(event.target)) {
+                searchResults.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
