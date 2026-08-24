@@ -7,203 +7,267 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>swrdfgd - Personal Hub</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
     <style>
-        /* CSS Variables untuk kemudahan mengubah tema warna */
-        :root {
-            --bg-color: #0f172a;
-            --text-color: #f8fafc;
-            --accent-color: #38bdf8;
-            --card-bg: #1e293b;
-            --card-hover: #334155;
-            --border-color: #334155;
-        }
+		/* CSS Variables untuk tema Terang (Light Mode - Default) */
+		:root {
+			--bg-color: #ffffff;
+			--text-color: #1e293b;
+			--text-muted: #64748b;
+			--accent-color: #f97316; /* Oranye cerah dari logo */
+			--heading-color: #db2777; /* Pink dari logo */
+			--card-bg: #fff7ed; /* Latar kartu warm (oranye sangat muda) */
+			--card-hover: #ffedd5;
+			--border-color: #fed7aa;
+			--shadow-color: rgba(249, 115, 22, 0.2);
+		}
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+		/* CSS Variables untuk tema Gelap (Dark Mode) */
+		body.dark-mode {
+			--bg-color: #0f172a;
+			--text-color: #f8fafc;
+			--text-muted: #94a3b8;
+			--accent-color: #fbbf24; /* Kuning matahari dari logo */
+			--heading-color: #fbbf24;
+			--card-bg: #1e293b;
+			--card-hover: #334155;
+			--border-color: #334155;
+			--shadow-color: rgba(0, 0, 0, 0.3);
+		}
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding: 20px;
-        }
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 50px 20px;
-        }
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background-color: var(--bg-color);
+			color: var(--text-color);
+			line-height: 1.6;
+			padding: 20px;
+			transition: background-color 0.3s ease, color 0.3s ease;
+		}
 
-        /* Bagian Header / Profile */
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
+		.container {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 50px 20px;
+			position: relative;
+		}
 
-        h1 {
-            font-size: 3.5rem;
-            color: var(--accent-color);
-            margin-bottom: 15px;
-            letter-spacing: 1px;
-        }
+		/* Tombol Dark Mode */
+		.theme-toggle {
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			background-color: var(--card-bg);
+			color: var(--accent-color);
+			border: 1px solid var(--border-color);
+			padding: 8px 16px;
+			border-radius: 20px;
+			cursor: pointer;
+			font-weight: bold;
+			font-size: 0.9rem;
+			transition: all 0.3s ease;
+			box-shadow: 0 2px 5px var(--shadow-color);
+		}
 
-        .about {
-            text-align: center;
-            font-size: 1.15rem;
-            margin-bottom: 50px;
-            color: #cbd5e1;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+		.theme-toggle:hover {
+			background-color: var(--card-hover);
+			transform: translateY(-2px);
+		}
+
+		/* Bagian Header / Profile */
+		header {
+			text-align: center;
+			margin-bottom: 50px;
+			margin-top: 20px;
+		}
+
+		h1 {
+			font-size: 3.5rem;
+			color: var(--heading-color);
+			margin-bottom: 15px;
+			letter-spacing: 1px;
+			transition: color 0.3s ease;
+		}
+
+		.about {
+			text-align: center;
+			font-size: 1.15rem;
+			margin-bottom: 50px;
+			color: var(--text-muted);
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+			transition: color 0.3s ease;
+		}
+
 		/* --- CSS UNTUK FITUR SEARCH --- */
-        .search-container {
-            max-width: 600px;
-            margin: 0 auto 40px auto;
-            position: relative;
-            text-align: left;
-        }
+		.search-container {
+			max-width: 600px;
+			margin: 0 auto 40px auto;
+			position: relative;
+			text-align: left;
+		}
 
-        #searchInput {
-            width: 100%;
-            padding: 15px 20px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            background-color: var(--card-bg);
-            color: var(--text-color);
-            font-size: 1rem;
-            outline: none;
-            transition: all 0.3s ease;
-        }
+		#searchInput {
+			width: 100%;
+			padding: 15px 20px;
+			border-radius: 8px;
+			border: 1px solid var(--border-color);
+			background-color: var(--card-bg);
+			color: var(--text-color);
+			font-size: 1rem;
+			outline: none;
+			transition: all 0.3s ease;
+		}
 
-        #searchInput:focus {
-            border-color: var(--accent-color);
-            box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
-        }
+		#searchInput:focus {
+			border-color: var(--accent-color);
+			box-shadow: 0 0 10px var(--shadow-color);
+		}
 
-        #searchResults {
-            margin-top: 10px;
-            background-color: var(--card-bg);
-            border-radius: 8px;
-            max-height: 300px;
-            overflow-y: auto;
-            border: 1px solid var(--border-color);
-            display: none; 
-            position: absolute; 
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-        }
+		#searchResults {
+			margin-top: 10px;
+			background-color: var(--card-bg);
+			border-radius: 8px;
+			max-height: 300px;
+			overflow-y: auto;
+			border: 1px solid var(--border-color);
+			display: none; 
+			position: absolute; 
+			width: 100%;
+			z-index: 1000;
+			box-shadow: 0 10px 15px -3px var(--shadow-color);
+		}
 
-        .search-item {
-            padding: 12px 20px;
-            border-bottom: 1px solid var(--border-color);
-            display: block;
-            text-decoration: none;
-            transition: background 0.2s;
-        }
+		.search-item {
+			padding: 12px 20px;
+			border-bottom: 1px solid var(--border-color);
+			display: block;
+			text-decoration: none;
+			transition: background 0.2s;
+		}
 
-        .search-item:last-child {
-            border-bottom: none;
-        }
+		.search-item:last-child {
+			border-bottom: none;
+		}
 
-        .search-item:hover {
-            background-color: var(--card-hover);
-        }
+		.search-item:hover {
+			background-color: var(--card-hover);
+		}
 
-        .search-title {
-            color: var(--accent-color);
-            font-weight: 600;
-            font-size: 1.1rem;
-            display: block;
-        }
+		.search-title {
+			color: var(--accent-color);
+			font-weight: 600;
+			font-size: 1.1rem;
+			display: block;
+		}
 
-        .search-url {
-            color: #94a3b8;
-            font-size: 0.8rem;
-            display: block;
-            margin-top: 3px;
-        }
-        /* Grid Layout untuk Kotak Link (Sangat Responsif) */
-        .projects-grid {
-            display: grid;
-            /* Membaca ukuran layar dan menyesuaikan jumlah kolom secara otomatis */
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
+		.search-url {
+			color: var(--text-muted);
+			font-size: 0.8rem;
+			display: block;
+			margin-top: 3px;
+		}
 
-        /* Desain Kartu (Card) */
-        .project-card {
-            background-color: var(--card-bg);
-            border-radius: 12px;
-            padding: 30px 20px;
-            text-align: center;
-            text-decoration: none;
-            color: var(--text-color);
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-height: 160px;
-            border: 1px solid var(--border-color);
-        }
+		/* Grid Layout untuk Kotak Link */
+		.projects-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 20px;
+		}
 
-        .project-card:hover {
-            transform: translateY(-8px);
-            background-color: var(--card-hover);
-            border-color: var(--accent-color);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-        }
+		/* Desain Kartu (Card) */
+		.project-card {
+			background-color: var(--card-bg);
+			border-radius: 12px;
+			padding: 30px 20px;
+			text-align: center;
+			text-decoration: none;
+			color: var(--text-color);
+			transition: all 0.3s ease;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			min-height: 160px;
+			border: 1px solid var(--border-color);
+		}
 
-        .project-title {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: var(--accent-color);
-        }
+		.project-card:hover {
+			transform: translateY(-8px);
+			background-color: var(--card-hover);
+			border-color: var(--accent-color);
+			box-shadow: 0 10px 15px -3px var(--shadow-color);
+		}
 
-        .project-desc {
-            font-size: 0.95rem;
-            color: #94a3b8;
-        }
+		.project-title {
+			font-size: 1.4rem;
+			font-weight: 600;
+			margin-bottom: 10px;
+			color: var(--accent-color);
+		}
 
-        /* Footer */
-        footer {
-            text-align: center;
-            margin-top: 80px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-color);
-            color: #64748b;
-            font-size: 0.9rem;
-        }
+		.project-desc {
+			font-size: 0.95rem;
+			color: var(--text-muted);
+		}
 
-        /* Penyesuaian khusus untuk layar HP kecil */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            .about {
-                font-size: 1rem;
-            }
-            .container {
-                padding: 30px 10px;
-            }
-        }
+		/* Footer */
+		footer {
+			text-align: center;
+			margin-top: 80px;
+			padding-top: 20px;
+			border-top: 1px solid var(--border-color);
+			color: var(--text-muted);
+			font-size: 0.9rem;
+		}
+
+		/* Penyesuaian khusus untuk layar HP kecil */
+		@media (max-width: 600px) {
+			h1 { font-size: 2.5rem; }
+			.about { font-size: 1rem; }
+			.container { padding: 40px 10px 30px 10px; }
+			.theme-toggle { top: 5px; right: 10px; font-size: 0.8rem; }
+		}
+		/* --- CSS UNTUK GANTI TEKS PERKENALAN --- */
+		/* Sembunyikan teks void secara default (saat light mode) */
+		.text-dark-mode {
+			display: none;
+		}
+
+		/* Saat body memiliki class 'dark-mode', sembunyikan teks matahari dan tampilkan teks void */
+		body.dark-mode .text-light-mode {
+			display: none;
+		}
+
+		body.dark-mode .text-dark-mode {
+			display: block;
+		}
     </style>
 </head>
 <body>
     <div class="container">
+		<button id="darkModeToggle" class="theme-toggle">🌙 Dark Mode</button>
         <!-- Bagian Perkenalan -->
         <header>
-            <h1>Hi, I'm swrdfgd</h1>
-            <p class="about">
-                Welcome to my digital space! I am a passionate creator, mathematician, and web explorer. 
-                I love building interesting projects, collecting knowledge, and organizing the random things I find across the internet. 
-                Feel free to explore my realms below.
+			<img src="icon.png" alt="icon" />
+            <h1>Hi, I'm swrdfgd</h1>	
+			<!-- Teks untuk Light Mode (Tema Matahari) -->
+            <p class="about text-light-mode">
+                Welcome to my bright digital space! I want to be your sun to shine your day. 
+                As a passionate creator, mathematician, and web explorer, I love radiating energy into interesting projects, illuminating knowledge, and collecting the bright, random rays of inspiration I find across the internet. 
+                Feel free to bask in the warmth of my realms below.
+            </p>
+
+            <!-- Teks untuk Dark Mode (Tema Void) -->
+            <p class="about text-dark-mode">
+                Welcome to my void world. Let the quiet darkness embrace you. 
+                As a passionate creator, mathematician, and web explorer, I love delving into the depths of enigmatic projects, uncovering hidden knowledge, and gathering the obscure fragments I find across the endless internet. 
+                Feel free to drift through the shadows of my realms below.
             </p>
 			<!-- Search Bar -->
             <div class="search-container">
@@ -360,5 +424,27 @@
             }
         });
     </script>
+	
+	<script>
+    const toggleBtn = document.getElementById('darkModeToggle');
+    
+    // Cek preferensi sebelumnya dari localStorage (opsional agar tema tersimpan)
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+        toggleBtn.textContent = '☀️ Light Mode';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        
+        if (document.body.classList.contains('dark-mode')) {
+            toggleBtn.textContent = '☀️ Light Mode';
+            localStorage.setItem('theme', 'dark'); // Simpan pilihan user
+        } else {
+            toggleBtn.textContent = '🌙 Dark Mode';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
 </body>
 </html>
