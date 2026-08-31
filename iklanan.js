@@ -106,6 +106,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://www.easygoingfaucet.com/ref/syaiftheoplover1925%40gmail.com" target="_blank" style="display: flex; flex-direction: column; width: 250px; height: 250px; text-decoration: none; border: 1px solid #e0e0e0; font-family: 'Segoe UI', Arial, sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; transition: transform 0.2s ease-in-out;" onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='scale(1)';"> <div style="background-color: #000000; color: #ffffff; height: 45%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 10px;"> <span style="font-size: 24px; font-weight: bold; line-height: 1.2;">Claim free<br>crypto</span> </div> <div style="background-color: #ffffff; color: #333333; height: 55%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 15px; box-sizing: border-box;"> <span style="font-size: 18px; font-weight: 800; color: #f4b728; margin-bottom: 8px; text-transform: uppercase;">Claim Now</span> <span style="font-size: 12px; color: #666666; margin-bottom: 12px;">Login with your crypto address. Solve a quick captcha. Get paid. That's it.</span> <span style="background-color: #f4b728; color: #000000; padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: bold;">Claim Here &rarr;</span> </div> </a>`,
 			],
+			[
+			`<a href="https://propush.me/?ref_id=tYtK" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/propushme.png" alt="Propush me" border="0" /></a>`,
+			],
         ];
 
         // 2. Array khusus untuk iklan Vertikal
