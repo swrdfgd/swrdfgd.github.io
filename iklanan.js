@@ -214,6 +214,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://chainers.io?r=mtj6vuhc" target="_blank" rel="noopener noreferrer"> <img src="https://static.chainers.io/referralPromoMaterials/concept1/w120h600.png" alt="Promo banner" width="120" height="600"> </a>`,
 			`<a href="https://chainers.io?r=mtj6vuhc" target="_blank" rel="noopener noreferrer"> <img src="https://static.chainers.io/referralPromoMaterials/concept1/w120h240.png" alt="Promo banner" width="120" height="240"> </a>`,
 			],
+			[`<a href="https://freebittorrent.com/?ref=50393" target="_blank"> <img src="https://freebittorrent.com/img/freebittorrent/banners/Banner728x90.jpg" alt="Free BitTorrent" style="border: none;" /> </a>`,
+			`<a href="https://freebittorrent.com/?ref=50393" target="_blank"> <img src="https://freebittorrent.com/img/freebittorrent/banners/Banner468x60.jpg" alt="Free BitTorrent" style="border: none;" /> </a>`,
+			],
 		];
 
     // 2. Jika ada elemen yang ditemukan, jalankan proses untuk masing-masing elemen
