@@ -121,6 +121,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://chainers.io?r=mtj6vuhc" target="_blank" rel="noopener noreferrer"> <img src="https://static.chainers.io/referralPromoMaterials/concept1/w320h100.png" alt="Promo banner" width="320" height="100"> </a>`,
 			`<a href="https://chainers.io?r=mtj6vuhc" target="_blank" rel="noopener noreferrer"> <img src="https://static.chainers.io/referralPromoMaterials/concept1/w320h50.png" alt="Promo banner" width="320" height="50"> </a>`,
 			],
+			[
+			`<a href="https://clikerads.com?ref=11A65041" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/clikerads.png" alt="Propush me" border="0" /></a>`,
+			],
         ];
 
         // 2. Array khusus untuk iklan Vertikal
