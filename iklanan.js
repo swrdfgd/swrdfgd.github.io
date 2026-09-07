@@ -142,7 +142,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://cryptifo.com/register?ref=AdminK" target="_blank"><img src="https://cryptifo.com/banners/cryptifo-banner-300x250.png" alt="Join Cryptifo - Earn Crypto" width="300" height="250" /></a>`,
 			],
 			[
-			`<a href="https://bitcoinaliens.com/?ref=3272916&game=8&pf=2" target="_blank"><img src="bitcoinalienslitecoin.JPG" alt="Propush me" border="0" /></a>`,
+			`<a href="https://bitcoinaliens.com/?ref=3272916&game=8&pf=2" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/bitcoinalienslitecoin.JPG" alt="Propush me" border="0" /></a>`,
+			],
+			[
+			`<a href="https://faucetdoguecoin.pw/?ref=4646" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/faucetdoguecoin.JPG" alt="Propush me" border="0" /></a>`,
 			],
         ];
 
