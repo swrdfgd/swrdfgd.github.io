@@ -16,7 +16,7 @@ daftarLink = [['https://random-english-words.blogspot.com/','<img width="30px" h
 	['https://swrdfgd.github.io/RandomImgur/','🖼Random Imgur Image Generator'],
 
 	
-	['https://frk-tal.blogspot.com/2022/08/random-plants-vs-zombies-2-plants.html','🌱🧟Random Plants Vs Zombies 2 Plants Generator'],
+	['https://swrdfgd.github.io/RandomPvZ2Plants/','🌱🧟Random Plants Vs Zombies 2 Plants Picker'],
 	['https://frk-tal.blogspot.com/2022/08/random-substance-generator.html','⚗Random Substance Generator'],
 	['https://frk-tal.blogspot.com/2022/08/random-graph-generator.html','🖍Random Graph Generator'],
 	//['https://frk-tal.blogspot.com/2022/08/random-yugioh-card-generator.html','🎴Random Yugioh Card Generator'],
@@ -24,7 +24,7 @@ daftarLink = [['https://random-english-words.blogspot.com/','<img width="30px" h
 
 	['https://frk-tal.blogspot.com/2022/07/random-compound-generator.html','🧪Random Compound Generator'],
 	['https://frk-tal.blogspot.com/2023/01/random-species-generator.html','🐜Random Species Generator'],
-	['https://www.knkland.com/p/kuisku.html','🧠Kuisku'],
+	//['https://www.knkland.com/p/kuisku.html','🧠Kuisku'],
 	['https://swrdfgd.github.io/BraillePractice/','👩‍🦯👨‍🦯Braille Practice'],
 	//['https://swrdfgd.github.io/RandomYugioh/','🎴Random Yugioh Card Generator'],
 	['https://swrdfgd.github.io/MakhlukWorld/','🕶️Makhluk World'],
