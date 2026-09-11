@@ -156,6 +156,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://bigbtc.win/?id=26181168" target="_blank"><img src="https://bigbtc.win/banners/b468x60.gif" alt="bigbtc win" border="0" /></a>`,
 			`<a href="https://bigbtc.win/?id=26181168" target="_blank"><img src="https://bigbtc.win/banners/b728x90.gif" alt="bigbtc win" border="0" /></a>`,
 			],
+			[
+			`<a href="https://t.me/orbit_portal_bot/app?startapp=335806280" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/portalgames.jpg" alt="Portal Games" border="0" /></a>`,
+			],
         ];
 
         // 2. Array khusus untuk iklan Vertikal
@@ -263,7 +266,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://bigbtc.win/?id=26181168" target="_blank"><img src="https://bigbtc.win/banners/b300x250.gif" alt="bigbtc win" border="0" /></a>`,
 			`<a href="https://bigbtc.win/?id=26181168" target="_blank"><img src="https://bigbtc.win/banners/b200x200.gif" alt="bigbtc win" border="0" /></a>`,
-			`<a href="https://bigbtc.win/?id=26181168" target="_blank"><img src="https://bigbtc.win/banners/b160x600.gif" alt="bigbtc win" border="0" /></a>`,],
+			`<a href="https://bigbtc.win/?id=26181168" target="_blank"><img src="https://bigbtc.win/banners/b160x600.gif" alt="bigbtc win" border="0" /></a>`,
+			],
 		];
 
     // 2. Jika ada elemen yang ditemukan, jalankan proses untuk masing-masing elemen
