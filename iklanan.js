@@ -148,9 +148,6 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://bitcoinaliens.com/?ref=3272916&game=8&pf=2" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/bitcoinalienslitecoin.JPG" alt="Free Litecoin" border="0" /></a>`,
 			],
 			[
-			`<a href="https://faucetdoguecoin.pw/?ref=4646" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/faucetdoguecoin.JPG" alt="Faucetdoguecoin" border="0" /></a>`,
-			],
-			[
 			`<a href="https://bigbtc.win/?id=26181168" target="_blank"><img src="https://bigbtc.win/banners/b300x250.gif" alt="bigbtc win" border="0" /></a>`,
 			`<a href="https://bigbtc.win/?id=26181168" target="_blank"><img src="https://bigbtc.win/banners/b200x200.gif" alt="bigbtc win" border="0" /></a>`,
 			`<a href="https://bigbtc.win/?id=26181168" target="_blank"><img src="https://bigbtc.win/banners/b468x60.gif" alt="bigbtc win" border="0" /></a>`,
