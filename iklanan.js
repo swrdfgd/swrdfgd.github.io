@@ -156,6 +156,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://t.me/orbit_portal_bot/app?startapp=335806280" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/portalgames.jpg" alt="Portal Games" border="0" /></a>`,
 			],
+			[
+			`<a href="https://okx.ac/join/85683437" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/okx.JPG" alt="OKX" border="0" /></a>`,
+			],
         ];
 
         // 2. Array khusus untuk iklan Vertikal
