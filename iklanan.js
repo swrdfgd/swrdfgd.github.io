@@ -165,6 +165,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://monetag.com/?ref_id=tH7c" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/monetag.JPG" alt="monetag" border="0" /></a>`,
 			],
+			[
+			`<a href="https://genkiminer.com/i/8018" target="_blank"><img src="https://genkiminer.com/img/promo/468.gif" alt="genkiminer" border="0" /></a>`,
+			`<a href="https://genkiminer.com/i/8018" target="_blank"><img src="https://genkiminer.com/img/promo/728.gif" alt="genkiminer" border="0" /></a>`,
+			],
         ];
 
         // 2. Array khusus untuk iklan Vertikal
@@ -276,6 +280,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			],
 			[
 			`<a href="https://findmymart.com/?r=3Hh1kWDyy32iwhVis6qzKSHA5Ty3GYuMWU" target="_blank" style="display: flex; flex-direction: column; width: 250px; height: 250px; text-decoration: none; border: 1px solid #e0e0e0; font-family: 'Segoe UI', Arial, sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; transition: transform 0.2s ease-in-out;" onmouseover="this.style.transform='scale(1.02)';" onmouseout="this.style.transform='scale(1)';"> <div style="background-color: #000000; color: #ffffff; height: 45%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 10px;"> <span style="font-size: 24px; font-weight: bold; line-height: 1.2;">Earn Daily<br>Crypto</span> </div> <div style="background-color: #ffffff; color: #333333; height: 55%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 15px; box-sizing: border-box;"> <span style="font-size: 18px; font-weight: 800; color: #f4b728; margin-bottom: 8px; text-transform: uppercase;">Claim Now</span> <span style="font-size: 12px; color: #666666; margin-bottom: 12px;">Get free Bitcoin Satoshi!</span> <span style="background-color: #f4b728; color: #000000; padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: bold;">Claim Here &rarr;</span> </div> </a>`,
+			],
+			[
+			`<a href="https://genkiminer.com/i/8018" target="_blank"><img src="https://genkiminer.com/img/promo/200.gif" alt="genkiminer" border="0" /></a>`,
 			],
 		];
 
