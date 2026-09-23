@@ -169,6 +169,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://genkiminer.com/i/8018" target="_blank"><img src="https://genkiminer.com/img/promo/468.gif" alt="genkiminer" border="0" /></a>`,
 			`<a href="https://genkiminer.com/i/8018" target="_blank"><img src="https://genkiminer.com/img/promo/728.gif" alt="genkiminer" border="0" /></a>`,
 			],
+			[
+			`<a href="https://autobitco.in/r/swordofgod" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/autobitco.in.JPG" alt="AutoBitcoin" border="0" /></a>`,
+			],
         ];
 
         // 2. Array khusus untuk iklan Vertikal
