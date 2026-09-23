@@ -315,4 +315,11 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         console.warn("Tidak ada elemen dengan class 'iklanan' di halaman ini.");
     }
+
+	if (Math.random() < (1 / 16)) {
+		  const script = document.createElement('script');
+		  script.src = 'https://pl31469839.profitableratecpmnetwork.com/f5/be/d8/f5bed8fca1997efe42bf376c347fbca1.js'; 
+		  script.async = true; 
+		  document.head.appendChild(script);
+	}
 });
