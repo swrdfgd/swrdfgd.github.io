@@ -175,6 +175,17 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://faucetpaymy.com/?ref=15968" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/faucetpaymy.JPG" alt="faucetpaymy" border="0" /></a>`,
 			],
+			[
+			`<a href="https://playnxc.com/?ref=789EB4EC" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/728banner.gif" width="728" height="90" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
+			`<a href="https://playnxc.com/?ref=789EB4EC" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/728banner.png" width="728" height="90" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
+			`<a href="https://playnxc.com/?ref=789EB4EC" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.gif" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
+			`<a href="https://playnxc.com/?ref=789EB4EC" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.png" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
+			
+			`<a href="https://playnxc.com/p/159142e2c3" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/728banner.gif" width="728" height="90" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
+			`<a href="https://playnxc.com/p/159142e2c3" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/728banner.png" width="728" height="90" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
+			`<a href="https://playnxc.com/p/159142e2c3" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.gif" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
+			`<a href="https://playnxc.com/p/159142e2c3" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.png" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
+			],
         ];
 
         // 2. Array khusus untuk iklan Vertikal
@@ -289,6 +300,12 @@ document.addEventListener("DOMContentLoaded", function() {
 			],
 			[
 			`<a href="https://genkiminer.com/i/8018" target="_blank"><img src="https://genkiminer.com/img/promo/200.gif" alt="genkiminer" border="0" /></a>`,
+			],
+			[
+			`<a href="https://playnxc.com/?ref=789EB4EC" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.gif" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
+			`<a href="https://playnxc.com/?ref=789EB4EC" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.png" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
+			`<a href="https://playnxc.com/p/159142e2c3" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.gif" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
+			`<a href="https://playnxc.com/p/159142e2c3" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.png" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
 			],
 		];
 
