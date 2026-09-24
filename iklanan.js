@@ -172,6 +172,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://autobitco.in/r/swordofgod" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/autobitco.in.JPG" alt="AutoBitcoin" border="0" /></a>`,
 			],
+			[
+			`<a href="https://faucetpaymy.com/?ref=15968" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/faucetpaymy.JPG" alt="faucetpaymy" border="0" /></a>`,
+			],
         ];
 
         // 2. Array khusus untuk iklan Vertikal
