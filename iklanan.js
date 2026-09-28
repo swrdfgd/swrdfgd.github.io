@@ -184,6 +184,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://playnxc.com/p/159142e2c3" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.gif" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
 			`<a href="https://playnxc.com/p/159142e2c3" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.png" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
 			],
+			[
+			`<a href="http://www.rakuten.com/r/SYAIFT?eeid=28187" target="_blank"><img src="rakuten.jpg" alt="faucetpaymy" border="0" /></a>`,
+			],
         ];
 
         // 2. Array khusus untuk iklan Vertikal
