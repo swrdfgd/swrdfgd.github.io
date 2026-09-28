@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const semuaElemenIklan = document.querySelectorAll(".iklanan");
 
         // 1. Array khusus untuk iklan Horizontal
-        const iklanHorizontal = [
+        let iklanHorizontal = [
 			[`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/125x125/simple_v1.gif" alt="Advertise with Anonymous Ads" width="125px" height="125px" /></a>`,
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/200x200/simple_v1.gif" alt="Advertise with Anonymous Ads" width="200px" height="200px" /></a>`,
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/250x250/simple_v1.gif" alt="Advertise with Anonymous Ads" width="250px" height="250px" /></a>`,
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 
         // 2. Array khusus untuk iklan Vertikal
-        const iklanVertikal = [
+        let iklanVertikal = [
 			[`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/120x600/simple_v1.gif" alt="Advertise with Anonymous Ads" width="120px" height="600px" /></a>`,
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/125x125/simple_v1.gif" alt="Advertise with Anonymous Ads" width="125px" height="125px" /></a>`,
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/160x600/simple_v1.gif" alt="Advertise with Anonymous Ads" width="160px" height="600px" /></a>`,
