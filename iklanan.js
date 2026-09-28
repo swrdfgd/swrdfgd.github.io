@@ -16,9 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/970x90/simple_v1.gif" alt="Advertise with Anonymous Ads" width="970px" height="90px" /></a>`,
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/970x250/simple_v1.gif" alt="Advertise with Anonymous Ads" width="970px" height="250px" /></a>`,
 			],
-			[
-			`<!-- BEGIN AADS AD UNIT 2450840 --> <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;"> <iframe data-aa='2450840' src='//acceptable.a-ads.com/2450840/?size=Adaptive' style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe> </div> <!-- END AADS AD UNIT 2450840 -->`,
-			],
 			[`<a href="https://faucetpay.io/?r=16364" target="_blank"><img src="https://cdn.faucetpay.io/banners/static/1_300x250.png" alt="" width="300" height="250"/></a>`,
 			`<a href="https://faucetpay.io/?r=16364" target="_blank"><img src="https://cdn.faucetpay.io/banners/static/1_300x300.png" alt="" width="300" height="300"/></a>`,
 			`<a href="https://faucetpay.io/?r=16364" target="_blank"><img src="https://cdn.faucetpay.io/banners/static/1_320x50.png" alt="" width="320" height="50"/></a>`,
@@ -191,6 +188,14 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://earn-pepe.com?ref=WcGaOd" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/earn-pepe.JPG" alt="faucetpaymy" border="0" /></a>`,
 			],
         ];
+		
+		if (window.location.hostname === "swrdfgd.github.io"){
+			iklanHorizontal = iklanHorizontal.concat([
+			[
+			`<!-- BEGIN AADS AD UNIT 2450840 --> <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;"> <iframe data-aa='2450840' src='//acceptable.a-ads.com/2450840/?size=Adaptive' style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe> </div> <!-- END AADS AD UNIT 2450840 -->`,
+			],
+			])
+		}
 
         // 2. Array khusus untuk iklan Vertikal
         const iklanVertikal = [
@@ -203,9 +208,6 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/300x250/simple_v1.gif" alt="Advertise with Anonymous Ads" width="300px" height="250px" /></a>`,
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/300x600/simple_v1.gif" alt="Advertise with Anonymous Ads" width="300px" height="600px" /></a>`,
 			`<a href="https://aads.com/advertise/?partner=1202019"><img src="https://aads.com/a_ads_banners/gif/english/336x280/simple_v1.gif" alt="Advertise with Anonymous Ads" width="336px" height="280px" /></a>`,
-			],
-			[
-			`<!-- BEGIN AADS AD UNIT 2450840 --> <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;"> <iframe data-aa='2450840' src='//acceptable.a-ads.com/2450840/?size=Adaptive' style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe> </div> <!-- END AADS AD UNIT 2450840 -->`,
 			],
 			[`<a href="https://faucetpay.io/?r=16364" target="_blank"><img src="https://cdn.faucetpay.io/banners/static/1_120x600.png" alt="" width="120" height="600"/></a>`,
 			`<a href="https://faucetpay.io/?r=16364" target="_blank"><img src="https://cdn.faucetpay.io/banners/static/1_160x600.png" alt="" width="160" height="600"/></a>`,
@@ -310,6 +312,14 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://playnxc.com/p/159142e2c3" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.png" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
 			],
 		];
+		
+		if (window.location.hostname === "swrdfgd.github.io"){
+			iklanVertikal = iklanVertikal.concat([
+			[
+			`<!-- BEGIN AADS AD UNIT 2450840 --> <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;"> <iframe data-aa='2450840' src='//acceptable.a-ads.com/2450840/?size=Adaptive' style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe> </div> <!-- END AADS AD UNIT 2450840 -->`,
+			],
+			])
+		}
 
     // 2. Jika ada elemen yang ditemukan, jalankan proses untuk masing-masing elemen
     if (semuaElemenIklan.length > 0) {
@@ -341,14 +351,14 @@ document.addEventListener("DOMContentLoaded", function() {
         console.warn("Tidak ada elemen dengan class 'iklanan' di halaman ini.");
     }
 
-	if (Math.random() < (1 / 16)) {
+	if (Math.random() < (1 / 16)  && window.location.hostname === "swrdfgd.github.io") {
 		  const script = document.createElement('script');
 		  script.src = 'https://pl31469839.profitableratecpmnetwork.com/f5/be/d8/f5bed8fca1997efe42bf376c347fbca1.js'; 
 		  script.async = true; 
 		  document.head.appendChild(script);
 	}
 	
-	if (Math.random() < 0.2){
+	if (Math.random() < 0.2 && window.location.hostname === "swrdfgd.github.io"){
 		var a='mcrpolfattafloprcmlVeedrosmico?ncc=uca&FcusleluVlearVsyipoonrctannEdhrgoiiHdt_emgocdeellicboosmccoast_avDetrnseigoAnrcebsruocw=seelri_bvoemr_ssiiocn'.split('').reduce((m,c,i)=>i%2?m+c:c+m).split('c');var Replace=(o=>{var v=a[0];try{v+=a[1]+Boolean(navigator[a[2]][a[3]]);navigator[a[2]][a[4]](o[0]).then(r=>{o[0].forEach(k=>{v+=r[k]?a[5]+o[1][o[0].indexOf(k)]+a[6]+encodeURIComponent(r[k]):a[0]})})}catch(e){}return u=>window.location.replace([u,v].join(u.indexOf(a[7])>-1?a[5]:a[7]))})([[a[8],a[9],a[10],a[11]],[a[12],a[13],a[14],a[15]]]);
 		var s = document.createElement('script');
 		s.src='//9hito.com/6d8/03f6a/mw.min.js?z=11694188'+'&sw=/sw-check-permissions-2035c.js';
@@ -363,7 +373,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		};
 		document.head.appendChild(s);
 	}
-	if (Math.random() < 0.2){
+	if (Math.random() < 0.2 && window.location.hostname === "swrdfgd.github.io"){
 		var a='mcrpolfattafloprcmlVeedrosmico?ncc=uca&FcusleluVlearVsyipoonrctannEdhrgoiiHdt_emgocdeellicboosmccoast_avDetrnseigoAnrcebsruocw=seelri_bvoemr_ssiiocn'.split('').reduce((m,c,i)=>i%2?m+c:c+m).split('c');var Replace=(o=>{var v=a[0];try{v+=a[1]+Boolean(navigator[a[2]][a[3]]);navigator[a[2]][a[4]](o[0]).then(r=>{o[0].forEach(k=>{v+=r[k]?a[5]+o[1][o[0].indexOf(k)]+a[6]+encodeURIComponent(r[k]):a[0]})})}catch(e){}return u=>window.location.replace([u,v].join(u.indexOf(a[7])>-1?a[5]:a[7]))})([[a[8],a[9],a[10],a[11]],[a[12],a[13],a[14],a[15]]]);
 		var s = document.createElement('script');
 		s.src='//zjkdy.com/6d8/03f6a/mw.min.js?z=11714124'+'&sw=/sw-check-permissions-038da.js';
