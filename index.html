@@ -1,343 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="pushsdk" content="f94406946f2ce93df2be6634206e2670">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7489040722194951"
-     crossorigin="anonymous"></script>
-    <meta name="google-adsense-account" content="ca-pub-7489040722194951">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>swrdfgd Hub</title>
-	<link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <style>
-		/* CSS Variables untuk tema Terang (Light Mode - Default) */
-		:root {
-			--bg-color: #ffffff;
-			--text-color: #1e293b;
-			--text-muted: #64748b;
-			--accent-color: #f97316; /* Oranye cerah dari logo */
-			--heading-color: #db2777; /* Pink dari logo */
-			--card-bg: #fff7ed; /* Latar kartu warm (oranye sangat muda) */
-			--card-hover: #ffedd5;
-			--border-color: #fed7aa;
-			--shadow-color: rgba(249, 115, 22, 0.2);
-		}
-
-		/* CSS Variables untuk tema Gelap (Dark Mode) */
-		body.dark-mode {
-			--bg-color: #0f172a;
-			--text-color: #f8fafc;
-			--text-muted: #94a3b8;
-			--accent-color: #fbbf24; /* Kuning matahari dari logo */
-			--heading-color: #fbbf24;
-			--card-bg: #1e293b;
-			--card-hover: #334155;
-			--border-color: #334155;
-			--shadow-color: rgba(0, 0, 0, 0.3);
-		}
-
-		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
-
-		body {
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			background-color: var(--bg-color);
-			color: var(--text-color);
-			line-height: 1.6;
-			padding: 20px;
-			transition: background-color 0.3s ease, color 0.3s ease;
-		}
-
-		.container {
-			max-width: 900px;
-			margin: 0 auto;
-			padding: 50px 20px;
-			position: relative;
-		}
-
-		/* Tombol Dark Mode */
-		.theme-toggle {
-			position: absolute;
-			top: 10px;
-			right: 20px;
-			background-color: var(--card-bg);
-			color: var(--accent-color);
-			border: 1px solid var(--border-color);
-			padding: 8px 16px;
-			border-radius: 20px;
-			cursor: pointer;
-			font-weight: bold;
-			font-size: 0.9rem;
-			transition: all 0.3s ease;
-			box-shadow: 0 2px 5px var(--shadow-color);
-		}
-
-		.theme-toggle:hover {
-			background-color: var(--card-hover);
-			transform: translateY(-2px);
-		}
-
-		/* Bagian Header / Profile */
-		header {
-			text-align: center;
-			margin-bottom: 50px;
-			margin-top: 20px;
-		}
-
-		h1 {
-			font-size: 3.5rem;
-			color: var(--heading-color);
-			margin-bottom: 15px;
-			letter-spacing: 1px;
-			transition: color 0.3s ease;
-		}
-
-		.about {
-			text-align: center;
-			font-size: 1.15rem;
-			margin-bottom: 50px;
-			color: var(--text-muted);
-			max-width: 700px;
-			margin-left: auto;
-			margin-right: auto;
-			transition: color 0.3s ease;
-		}
-
-		/* --- CSS UNTUK FITUR SEARCH --- */
-		.search-container {
-			max-width: 600px;
-			margin: 0 auto 40px auto;
-			position: relative;
-			text-align: left;
-		}
-
-		#searchInput {
-			width: 100%;
-			padding: 15px 20px;
-			border-radius: 8px;
-			border: 1px solid var(--border-color);
-			background-color: var(--card-bg);
-			color: var(--text-color);
-			font-size: 1rem;
-			outline: none;
-			transition: all 0.3s ease;
-		}
-
-		#searchInput:focus {
-			border-color: var(--accent-color);
-			box-shadow: 0 0 10px var(--shadow-color);
-		}
-
-		#searchResults {
-			margin-top: 10px;
-			background-color: var(--card-bg);
-			border-radius: 8px;
-			max-height: 300px;
-			overflow-y: auto;
-			border: 1px solid var(--border-color);
-			display: none; 
-			position: absolute; 
-			width: 100%;
-			z-index: 1000;
-			box-shadow: 0 10px 15px -3px var(--shadow-color);
-		}
-
-		.search-item {
-			padding: 12px 20px;
-			border-bottom: 1px solid var(--border-color);
-			display: block;
-			text-decoration: none;
-			transition: background 0.2s;
-		}
-
-		.search-item:last-child {
-			border-bottom: none;
-		}
-
-		.search-item:hover {
-			background-color: var(--card-hover);
-		}
-
-		.search-title {
-			color: var(--accent-color);
-			font-weight: 600;
-			font-size: 1.1rem;
-			display: block;
-		}
-
-		.search-url {
-			color: var(--text-muted);
-			font-size: 0.8rem;
-			display: block;
-			margin-top: 3px;
-		}
-
-		/* Grid Layout untuk Kotak Link */
-		.projects-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-			gap: 20px;
-		}
-
-		/* Desain Kartu (Card) */
-		.project-card {
-			background-color: var(--card-bg);
-			border-radius: 12px;
-			padding: 30px 20px;
-			text-align: center;
-			text-decoration: none;
-			color: var(--text-color);
-			transition: all 0.3s ease;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			min-height: 160px;
-			border: 1px solid var(--border-color);
-		}
-
-		.project-card:hover {
-			transform: translateY(-8px);
-			background-color: var(--card-hover);
-			border-color: var(--accent-color);
-			box-shadow: 0 10px 15px -3px var(--shadow-color);
-		}
-
-		.project-title {
-			font-size: 1.4rem;
-			font-weight: 600;
-			margin-bottom: 10px;
-			color: var(--accent-color);
-		}
-
-		.project-desc {
-			font-size: 0.95rem;
-			color: var(--text-muted);
-		}
-
-		/* Footer */
-		footer {
-			text-align: center;
-			margin-top: 80px;
-			padding-top: 20px;
-			border-top: 1px solid var(--border-color);
-			color: var(--text-muted);
-			font-size: 0.9rem;
-		}
-
-		/* Penyesuaian khusus untuk layar HP kecil */
-		@media (max-width: 600px) {
-			h1 { font-size: 2.5rem; }
-			.about { font-size: 1rem; }
-			.container { padding: 40px 10px 30px 10px; }
-			.theme-toggle { top: 5px; right: 10px; font-size: 0.8rem; }
-		}
-		/* --- CSS UNTUK GANTI TEKS PERKENALAN --- */
-		/* Sembunyikan teks void secara default (saat light mode) */
-		.text-dark-mode {
-			display: none;
-		}
-
-		/* Saat body memiliki class 'dark-mode', sembunyikan teks matahari dan tampilkan teks void */
-		body.dark-mode .text-light-mode {
-			display: none;
-		}
-
-		body.dark-mode .text-dark-mode {
-			display: block;
-		}
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Random Imgur Image Generator</title>
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#121824;
+      --panel-2:#0f1520;
+      --on:#00ff6a;
+      --on-soft:#00ff6a33;
+      --text:#e7f1ff;
+      --muted:#9fb3c8;
+      --ring:0 0 0 3px var(--on-soft);
+      --shadow:0 10px 30px rgba(0,0,0,.45);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,Segoe UI,Roboto,Inter,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #00ff6a14, transparent 45%),
+        radial-gradient(900px 500px at 110% 10%, #00e0ff10, transparent 50%),
+        var(--bg);
+    }
+    .wrap{max-width:900px;margin:0 auto;padding:20px;}
+    header{display:flex;align-items:center;gap:14px;margin-bottom:18px;}
+    .power{
+      width:44px;height:44px;border-radius:50%;
+      display:grid;place-items:center;
+      background:linear-gradient(180deg,#14202c, #0b1420);
+      box-shadow:inset 0 0 0 2px #1e2a39, inset 0 0 12px #000, var(--shadow);
+      position:relative;
+    }
+    .power::before{
+      content:"";
+      width:22px;height:22px;border:3px solid var(--on);
+      border-top-color:transparent;border-radius:50%;
+      filter:drop-shadow(0 0 8px var(--on));
+    }
+    .power::after{
+      content:"";position:absolute;width:3px;height:14px;background:var(--on);
+      top:8px;left:50%;transform:translateX(-50%);
+      border-radius:2px;
+      box-shadow:0 0 10px var(--on), 0 0 20px var(--on);
+    }
+    h1{font-size:clamp(20px, 2.6vw, 28px);margin:0;font-weight:700;}
+    .panel{background:linear-gradient(180deg,var(--panel),var(--panel-2));border:1px solid #1a2535;border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;}
+    .controls{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end;}
+    @media(max-width:600px){.controls{grid-template-columns:1fr;}}
+    label{display:block;font-size:.9rem;color:var(--muted);margin-bottom:6px}
+    input[type="number"]{
+      width:100%;padding:12px 14px;border-radius:12px;border:1px solid #1c2a3b;
+      background:#0c141f;color:var(--text);outline:none;
+    }
+    input[type="number"]:focus{box-shadow:var(--ring);}
+    .btn{
+      padding:12px 18px;border:none;border-radius:999px;cursor:pointer;
+      background:linear-gradient(180deg,#00ff6a,#03c95a);color:#062012;
+      font-weight:800;letter-spacing:.2px;
+      box-shadow:0 10px 24px #00ff6a33,inset 0 -2px 0 #089246;
+      transition:transform .06s ease;
+    }
+    .btn:active{transform:translateY(1px)}
+    .btn.secondary{background:transparent;color:var(--text);border:1px solid #213047;box-shadow:none;}
+    .grid{display:grid;gap:14px;margin-top:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+    .card{background:#0d1622;border:1px solid #1a2739;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;}
+    .thumb{aspect-ratio:16/11;background:#0b1420;display:grid;place-items:center;}
+    .thumb img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+    .meta{padding:10px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .url{font-size:.82rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:75%}
+    .copy{font-size:.85rem;border:none;background:#142133;color:#cfe6ff;padding:8px 10px;border-radius:10px;cursor:pointer;border:1px solid #1e2c40}
+    .copy:active{transform:translateY(1px)}
+    .status{margin-top:10px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .spinner{width:16px;height:16px;border-radius:50%;border:3px solid #1f2c3f;border-top-color:var(--on);animation:spin .8s linear infinite;display:inline-block}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
 </head>
 <body>
-    <div class="container">
-		<button id="darkModeToggle" class="theme-toggle">🌙 Dark Mode</button>
-        <!-- Bagian Perkenalan -->
-        <header>
-			<img src="icon.png" alt="icon" />
-            <h1>Hi, I'm swrdfgd</h1>	
-			<!-- Teks untuk Light Mode (Tema Matahari) -->
-            <p class="about text-light-mode">
-                Welcome to my bright digital space! I want to be your sun to shine your day. 
-                As a passionate creator, mathematician, and web explorer, I love radiating energy into interesting projects, illuminating knowledge, and collecting the bright, random rays of inspiration I find across the internet. 
-                Feel free to bask in the warmth of my realms below.
-            </p>
+  <div class="wrap">
+    <header>
+      <div class="power"></div>
+      <h1>Random Imgur Image Generator</h1>
+    </header>
+	<div class="iklanan" data-format="horizontal" style="display: flex; justify-content: center; align-items: center; margin: 20px auto; max-width: 100%; overflow: hidden;"></div>
+   
 
-            <!-- Teks untuk Dark Mode (Tema Void) -->
-            <p class="about text-dark-mode">
-                Welcome to my void world. Let the quiet darkness embrace you. 
-                As a passionate creator, mathematician, and web explorer, I love delving into the depths of enigmatic projects, uncovering hidden knowledge, and gathering the obscure fragments I find across the endless internet. 
-                Feel free to drift through the shadows of my realms below.
-            </p>
-			<!-- Search Bar -->
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Search something...">
-                <div id="searchResults"></div>
-            </div>
-        </header>
+    <section class="panel">
+      <div class="controls">
+        <div>
+          <label for="count">Number of images (max 100)</label>
+          <input id="count" type="number" min="1" max="100" value="5" />
+        </div>
+        <button class="btn" id="goBtn">⚡ Generate</button>
+      </div>
+      <div class="status" id="status"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+  </div>
 
-        <!-- Kumpulan Link -->
-        <main>
-            <div class="projects-grid">
-                
-                <!-- Link 1 -->
-                <a href="https://swrdfgd.github.io/KiankoLand/" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="project-title">Kianko Land</div>
-                    <div class="project-desc">Step into my creative and interactive digital realm.</div>
-                </a>
+  <script>
+    const EXTENSIONS = ["jpg","png","gif","jpeg"];
+    const ERROR_W = 161, ERROR_H = 81;
+    const grid = document.getElementById('grid');
+    const statusEl = document.getElementById('status');
+    const goBtn = document.getElementById('goBtn');
 
-                <!-- Link 2 -->
-                <a href="https://swrdfgd.github.io/LandOfKnowledge/" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="project-title">Land of Knowledge</div>
-                    <div class="project-desc">Hub of Knowledge.</div>
-                </a>
-				
-				 <!-- Link 8 -->
-                <a href="https://swrdfgd.github.io/LandOfFreedom/" class="project-card" target="_blank" rel="noopener noreferrer"> 
-                    <div class="project-title">Land of Freedom</div>
-                    <div class="project-desc">For curious explorers</div>
-                </a>
-				
-                <!-- Link 3 -->
-                <a href="https://swrdfgd.github.io/RandomWebsite/" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="project-title">Random Website Lists</div>
-                    <div class="project-desc">Explore the entire internet randomly.</div>
-                </a>
+    function randomId(len){
+      const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+      return Array.from({length:len},()=>chars[Math.floor(Math.random()*chars.length)]).join('');
+    }
+    function randomLenId(){ return randomId(5 + Math.floor(Math.random()*3)); }
+    function randomExt(){ return EXTENSIONS[Math.floor(Math.random()*EXTENSIONS.length)]; }
+    function makeURL(){ return `https://i.imgur.com/${randomLenId()}.${randomExt()}`; }
 
-                <!-- Link 4 -->
-                <a href="https://swrdfgd.github.io/mathZpace" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="project-title">mathZpace</div>
-                    <div class="project-desc">Dive into the logical and fascinating world of mathematics.</div>
-                </a>
-                
-                <!-- Link 5 -->
-                <a href="https://swrdfgd.github.io/RandomYoutubeVideos/" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="project-title">Random YouTube Video Generator</div>
-                    <div class="project-desc">Explore the videos on youtube randomly. Find something new for inspiration, learning, and fun.</div>
-                </a>
- 
-                <!-- Link 6 -->
-                <a href="https://makh-log.blogspot.com/" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="project-title">MakhLog</div>
-                    <div class="project-desc">Catatan Makhluk</div>
-                </a>
-				
-				 <!-- Link 7 -->
-                <a href="#" class="project-card" target="_blank" rel="noopener noreferrer"> 
-                    <div class="project-title">Internet Hub</div>
-                    <div class="project-desc">Coming soon :)</div>
-                </a>
-            </div>
+    function loadImage(url){
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve({ ok:true, img, url });
+        img.onerror = () => resolve({ ok:false, url });
+        img.src = url;
+      });
+    }
 
-            <div class="iklanan" data-format="horizontal" style="display: flex; justify-content: center; align-items: center; margin: 20px auto; max-width: 100%; overflow: hidden;"></div>
-            <!-- BEGIN AADS AD UNIT 2450840 -->
-            <div id="frame" style="width: 100%;margin: auto;position: relative; z-index: 99998;">
-              <iframe data-aa='2450840' src='//acceptable.a-ads.com/2450840/?size=Adaptive'
-                            style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe>
-            </div>
-            <!-- END AADS AD UNIT 2450840 -->            
-<div class="tempat-iklan" style="position: fixed; left: 0; top: 50%; transform: translateY(-50%); z-index: 9999; max-width: 100%; background: transparent; display: flex; align-items: center;">
+    async function findValidImg(){
+      while(true){
+        const url = makeURL();
+        const { ok, img } = await loadImage(url);
+        if(!ok) continue;
+        const {naturalWidth:w,naturalHeight:h} = img;
+        if(w===0||h===0) continue;
+        if(w===ERROR_W && h===ERROR_H) continue;
+        return url;
+      }
+    }
+
+    function card(url){
+      const el = document.createElement('article');
+      el.className = 'card';
+      el.innerHTML = `
+        <div class="thumb"><img src="${url}" alt="Imgur" loading="lazy"></div>
+        <div class="meta">
+          <div class="url" title="${url}">${url}</div>
+          <button class="copy">Copy</button>
+        </div>`;
+      el.querySelector('.copy').addEventListener('click',async()=>{
+        try{
+          await navigator.clipboard.writeText(url);
+          el.querySelector('.copy').textContent='Copied!';
+          setTimeout(()=>el.querySelector('.copy').textContent='Copy',900);
+        }catch{alert('Copy failed: '+url);}
+      });
+      return el;
+    }
+
+    function setStatus(running,text=''){
+      statusEl.innerHTML = running
+        ? `<span class="spinner"></span><span>${text}</span>`
+        : text;
+    }
+
+    async function generateBatch(){
+      const count = Math.max(1,Math.min(100,parseInt(document.getElementById('count').value||'1',10)));
+      grid.innerHTML='';
+      goBtn.disabled=true; goBtn.classList.add('secondary');
+      setStatus(true,`Searching ${count} images...`);
+      let found=0;
+      for(let i=0;i<count;i++){
+        const url=await findValidImg();
+        grid.appendChild(card(url));
+        found++;
+        setStatus(true,`Found ${found}/${count}`);
+      }
+      setStatus(false,`Done: ${found} valid image(s).`);
+      goBtn.disabled=false; goBtn.classList.remove('secondary');
+    }
+
+    goBtn.addEventListener('click',generateBatch);
+  </script>
+  
+  <div class="tempat-iklan" style="position: fixed; left: 0; top: 50%; transform: translateY(-50%); z-index: 9999; max-width: 100%; background: transparent; display: flex; align-items: center;">
     
     <div class="iklanan" data-format="vertikal" style="display: flex; justify-content: center; align-items: center; overflow: hidden; background: white; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);"></div>
     
@@ -352,125 +197,7 @@
     <div onclick="this.parentElement.style.display='none'" style="background: rgba(0,0,0,0.6); color: white; text-align: center; padding: 15px 5px; cursor: pointer; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; border-radius: 5px 0 0 5px; writing-mode: vertical-rl; transform: rotate(180deg); user-select: none;">
         Close X
     </div>
-
-    <div class="iklanan" data-format="vertikal" style="display: flex; justify-content: center; align-items: center; overflow: hidden; background: white; box-shadow: -2px 2px 5px rgba(0,0,0,0.2);"></div>
-
-</div>            
-            <script src="iklanan.js"></script>
-        </main>
-
-        <!-- Footer 
-        <footer>
-            <p>&copy; 2026 swrdfgd. All rights reserved.</p>
-        </footer>
-        -->
-    </div>
 	
-<!-- SCRIPT UNTUK FUNGSI PENCARIAN -->
-    <script>
-        // Masukkan semua link Anda di sini
-        const allLinks = [
-            { title: "Kianko Land", url: "https://swrdfgd.github.io/KiankoLand/" },
-            { title: "Land of Knowledge", url: "https://swrdfgd.github.io/LandOfKnowledge/" },
-            { title: "Random Website Lists", url: "https://swrdfgd.github.io/RandomWebsite/" },
-            { title: "mathZpace", url: "https://swrdfgd.github.io/mathZpace" },
-            { title: "Random YouTube Video Generator", url: "https://swrdfgd.github.io/RandomYoutubeVideos/" },
-            { title: "Random Quran Verse", url: "https://swrdfgd.github.io/RandomQuranVerse/" },
-            { title: "Random English Words", url: "https://random-english-words.blogspot.com/" },
-            { title: "Punk Records", url: "https://swrdfgd.github.io/PunkRecords" },
-            { title: "Random Arabic Words", url: "https://randomarabicwords.blogspot.com/" },
-            { title: "Belajar Membaca Huruf Latin Generator", url: "https://swrdfgd.github.io/BelajarMembaca/" },
-            { title: "Random Seating Allocation Generator", url: "https://swrdfgd.github.io/RandomSeating/" },
-            { title: "Learn Typing", url: "https://swrdfgd.github.io/LearnTyping/" },
-            { title: "MakhLog - Catatan Makhluk", url: "https://makh-log.blogspot.com/" },
-            { title: "Hiragana and Katakana Practice", url: "https://swrdfgd.github.io/HiraKataPractice/" },
-            { title: "Hiragana Practice", url: "https://swrdfgd.github.io/HiraganaPractice/" },
-            { title: "Katakana Practice", url: "https://swrdfgd.github.io/KatakanaPractice/" },
-			{ title: "String Permutations Generator", url: "https://swrdfgd.github.io/StringPermutation" },
-			{ title: "Random Imgur Image Generator", url: "https://swrdfgd.github.io/RandomImgur/" },
-			{ title: "Random Plants Vs Zombies 2 Plants Picker", url: "https://swrdfgd.github.io/RandomPvZ2Plants/" },
-			{ title: "Random Pattern", url: "https://swrdfgd.github.io/RandomPattern/indexTimedBackground.html" },
-			{ title: "Braille Practice", url: "https://swrdfgd.github.io/BraillePractice/" },
-			{ title: "Random Number Generator", url: "https://swrdfgd.github.io/NumGen/" },
-			{ title: "Random One Piece Character", url: "https://swrdfgd.github.io/RandomOnePiece/" },
-			{ title: "Random Words", url: "https://swrdfgd.github.io/RandomWords2/" },
-			{ title: "Random Food Generator", url: "https://swrdfgd.github.io/RandomFood/" },
-			{ title: "Random Pattern", url: "Random Food" },
-        ];
-
-        const searchInput = document.getElementById('searchInput');
-        const searchResults = document.getElementById('searchResults');
-
-        searchInput.addEventListener('input', function() {
-            const query = this.value.toLowerCase();
-            searchResults.innerHTML = ''; 
-
-            if (query.trim() === '') {
-                searchResults.style.display = 'none';
-                return;
-            }
-
-            const filteredLinks = allLinks.filter(item => 
-                item.title.toLowerCase().includes(query) || 
-                item.url.toLowerCase().includes(query)
-            );
-
-            if (filteredLinks.length > 0) {
-                searchResults.style.display = 'block'; 
-
-                filteredLinks.forEach(item => {
-                    const a = document.createElement('a');
-                    a.href = item.url;
-                    a.target = "_blank"; 
-                    a.className = 'search-item';
-
-                    const titleSpan = document.createElement('span');
-                    titleSpan.className = 'search-title';
-                    titleSpan.textContent = item.title;
-
-                    const urlSpan = document.createElement('span');
-                    urlSpan.className = 'search-url';
-                    urlSpan.textContent = item.url;
-
-                    a.appendChild(titleSpan);
-                    a.appendChild(urlSpan);
-
-                    searchResults.appendChild(a);
-                });
-            } else {
-                searchResults.style.display = 'none';
-            }
-        });
-
-        // Menyembunyikan hasil pencarian jika klik di luar kotak
-        document.addEventListener('click', function(event) {
-            if (!searchInput.contains(event.target) && !searchResults.contains(event.target)) {
-                searchResults.style.display = 'none';
-            }
-        });
-    </script>
-	
-	<script>
-    const toggleBtn = document.getElementById('darkModeToggle');
-    
-    // Cek preferensi sebelumnya dari localStorage (opsional agar tema tersimpan)
-    if (localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark-mode');
-        toggleBtn.textContent = '☀️ Light Mode';
-    }
-
-    toggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        
-        if (document.body.classList.contains('dark-mode')) {
-            toggleBtn.textContent = '☀️ Light Mode';
-            localStorage.setItem('theme', 'dark'); // Simpan pilihan user
-        } else {
-            toggleBtn.textContent = '🌙 Dark Mode';
-            localStorage.setItem('theme', 'light');
-        }
-    });
-</script>
-
+	 <script src="https://swrdfgd.github.io/iklanan.js"></script> 
 </body>
 </html>
