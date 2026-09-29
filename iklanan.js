@@ -190,6 +190,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://orthofaucet.com/ target="_blank"><img src="https://swrdfgd.github.io/moreBanner/orthofaucet.JPG" alt="orthofaucet" border="0" /></a>`,
 			],
+			[
+			`<a href="https://timebucks.com/?refID=230175427 target="_blank"><img src="https://swrdfgd.github.io/moreBanner/timebucks.jpg" alt="timebucsks" border="0" /></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
@@ -313,6 +316,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://playnxc.com/?ref=789EB4EC" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.png" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
 			`<a href="https://playnxc.com/p/159142e2c3" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.gif" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
 			`<a href="https://playnxc.com/p/159142e2c3" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.png" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
+			],
+			[
+			`<a href="https://timebucks.com/?refID=230175427 target="_blank"><img src="https://swrdfgd.github.io/moreBanner/timebucks.jpg" alt="timebucsks" border="0" /></a>`,
 			],
 		];
 		
