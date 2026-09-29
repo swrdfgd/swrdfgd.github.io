@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://timebucks.com/?refID=230175427" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/timebucks.jpg" alt="timebucsks" border="0" /></a>`,
 			],
 			[
-			`<a href="https://go.1eon-uno.top/" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/gofaucet.png" alt="timebucsks" border="0" /></a>`,
+			`<a href="https://go.1eon-uno.top/?r=1661" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/gofaucet.png" alt="timebucsks" border="0" /></a>`,
 			],
         ];
 		
