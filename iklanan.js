@@ -187,6 +187,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://earn-pepe.com?ref=WcGaOd" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/earn-pepe.JPG" alt="faucetpaymy" border="0" /></a>`,
 			],
+			[
+			`<a href="https://orthofaucet.com/ target="_blank"><img src="https://swrdfgd.github.io/moreBanner/orthofaucet.JPG" alt="orthofaucet" border="0" /></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
