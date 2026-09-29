@@ -188,10 +188,13 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://earn-pepe.com?ref=WcGaOd" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/earn-pepe.JPG" alt="faucetpaymy" border="0" /></a>`,
 			],
 			[
-			`<a href="https://orthofaucet.com/ target="_blank"><img src="https://swrdfgd.github.io/moreBanner/orthofaucet.JPG" alt="orthofaucet" border="0" /></a>`,
+			`<a href="https://orthofaucet.com/" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/orthofaucet.JPG" alt="orthofaucet" border="0" /></a>`,
 			],
 			[
-			`<a href="https://timebucks.com/?refID=230175427 target="_blank"><img src="https://swrdfgd.github.io/moreBanner/timebucks.jpg" alt="timebucsks" border="0" /></a>`,
+			`<a href="https://timebucks.com/?refID=230175427" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/timebucks.jpg" alt="timebucsks" border="0" /></a>`,
+			],
+			[
+			`<a href="https://go.1eon-uno.top/" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/gofaucet.png" alt="timebucsks" border="0" /></a>`,
 			],
         ];
 		
@@ -318,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://playnxc.com/p/159142e2c3" target="_blank" rel="noopener"><img src="https://playnxc.com/assets/img/300banner.png" width="300" height="250" alt="PlayNXC — Earn free TRX" style="border:0;"></a>`,
 			],
 			[
-			`<a href="https://timebucks.com/?refID=230175427 target="_blank"><img src="https://swrdfgd.github.io/moreBanner/timebucks.jpg" alt="timebucsks" border="0" /></a>`,
+			`<a href="https://timebucks.com/?refID=230175427" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/timebucks.jpg" alt="timebucsks" border="0" /></a>`,
 			],
 		];
 		
