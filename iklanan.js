@@ -196,6 +196,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://go.1eon-uno.top/?r=1661" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/gofaucet.png" alt="timebucsks" border="0" /></a>`,
 			],
+			[
+			`<a href="https://eldato.store/?r=tc5r7xju" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/eldato.store.JPG" alt="timebucsks" border="0" /></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
