@@ -199,6 +199,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://eldato.store/?r=tc5r7xju" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/eldato.store.JPG" alt="timebucsks" border="0" /></a>`,
 			],
+			[
+			`<a href="https://refadav.com/?ref=G1D9OFsOUUPY7Kin-DrejV3NVuax4ErA" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/evadav.jpg" alt="timebucsks" border="0" /></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
