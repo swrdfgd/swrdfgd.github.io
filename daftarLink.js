@@ -70,4 +70,5 @@ daftarLink = [['https://random-english-words.blogspot.com/','<img width="30px" h
 	['https://swrdfgd.github.io/RandomInstagram','🦋⃝Random Instagram Reel'],
 	['https://swrdfgd.github.io/RandomWiki','🚀Random Wiki Article'],
 	['https://swrdfgd.github.io/PokemonOnet/','<img width="30px" height="auto" src="pokeball.png"/>Pokemon Onet'],
+	['https://swrdfgd.github.io/AdvancedRNGEngine/','🤖🎰Advanced RNG Engine'],
 	];
