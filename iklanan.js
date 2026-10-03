@@ -202,6 +202,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://refadav.com/?ref=G1D9OFsOUUPY7Kin-DrejV3NVuax4ErA" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/evadav.jpg" alt="timebucsks" border="0" /></a>`,
 			],
+			[
+			`<a href="https://iloveusdt.site/?r=wjsyz9e8" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/iloveusdt.site.jpg" alt="timebucsks" border="0" /></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
