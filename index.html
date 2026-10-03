@@ -279,7 +279,7 @@
 
         <!-- Kumpulan Link -->
         <main>
-            <div class="projects-grid">
+            <div id="projectsGrid" class="projects-grid">
                 
                 <!-- Link 1 -->
                 <a href="https://swrdfgd.github.io/KiankoLand/" class="project-card" target="_blank" rel="noopener noreferrer">
@@ -401,6 +401,11 @@
 			{ title: "Search Anywhere", url: "https://swrdfgd.github.io/SearchAnywhere/" },
 			{ title: "Rock Paper Scissor Tic Tac Toe Fusion", url: "https://swrdfgd.github.io/RPST3/" },
 			{ title: "Random Chinese Character Generator", url: "https://swrdfgd.github.io/RandomChineseChar/" },
+			{ title: "️Emoji Screen Saver", url: "https://swrdfgd.github.io/EmojiScreenSaver/" },
+			{ title: "️Today Vibe", url: "https://swrdfgd.github.io/TodayVibe/" },
+			{ title: "️Flying Characters Screen Saver", url: "https://swrdfgd.github.io/ScreenSaver/" },
+			{ title: "️Random Math Videos", url: "https://swrdfgd.github.io/RandomMathVideos/" },
+			{ title: "️Random Math Keywords", url: "https://swrdfgd.github.io/MathKeywords/" },
         ];
 
         const searchInput = document.getElementById('searchInput');
@@ -453,6 +458,32 @@
                 searchResults.style.display = 'none';
             }
         });
+		
+		window.addEventListener('DOMContentLoaded', () => {
+			const grid = document.getElementById('projectsGrid');
+			
+			// Pastikan array allLinks sudah ada, lalu ambil 2 secara acak
+			let shuffled = [...allLinks].sort(() => 0.5 - Math.random());
+			let selectedTwo = shuffled.slice(0, 2);
+
+			selectedTwo.forEach(item => {
+				const a = document.createElement('a');
+				a.href = item.url;
+				a.className = 'project-card';
+				a.target = '_blank';
+				a.setAttribute('rel', 'noopener noreferrer');
+
+				const titleDiv = document.createElement('div');
+				titleDiv.className = 'project-title';
+				titleDiv.textContent = item.title;
+
+
+				a.appendChild(titleDiv);
+
+				// Menambahkan di bagian akhir grid (menggunakan appendChild, bukan prepend)
+				grid.appendChild(a);
+			});
+		});		
     </script>
 	
 	<script>
