@@ -332,6 +332,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://timebucks.com/?refID=230175427" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/timebucks.jpg" alt="timebucsks" border="0" /></a>`,
 			],
+			[
+			`<a href="https://freeltc.fun/?r=6679" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/freeltc.fun.jpg" alt="timebucsks" border="0" /></a>`,
+			],
 		];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
