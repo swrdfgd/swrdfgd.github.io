@@ -193,22 +193,25 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://timebucks.com/?refID=230175427" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/timebucks.jpg" alt="timebucsks" border="0" /></a>`,
 			],
 			[
-			`<a href="https://go.1eon-uno.top/?r=1661" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/gofaucet.png" alt="timebucsks" border="0" /></a>`,
+			`<a href="https://go.1eon-uno.top/?r=1661" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/gofaucet.png" alt="gofaucet" border="0" /></a>`,
 			],
 			[
-			`<a href="https://eldato.store/?r=tc5r7xju" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/eldato.store.JPG" alt="timebucsks" border="0" /></a>`,
+			`<a href="https://eldato.store/?r=tc5r7xju" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/eldato.store.JPG" alt="eldato.store" border="0" /></a>`,
 			],
 			[
-			`<a href="https://refadav.com/?ref=G1D9OFsOUUPY7Kin-DrejV3NVuax4ErA" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/evadav.jpg" alt="timebucsks" border="0" /></a>`,
+			`<a href="https://refadav.com/?ref=G1D9OFsOUUPY7Kin-DrejV3NVuax4ErA" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/evadav.jpg" alt="evadav" border="0" /></a>`,
 			],
 			[
-			`<a href="https://iloveusdt.site/?r=wjsyz9e8" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/iloveusdt.site.jpg" alt="timebucsks" border="0" /></a>`,
+			`<a href="https://iloveusdt.site/?r=wjsyz9e8" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/iloveusdt.site.jpg" alt="iloveusdt" border="0" /></a>`,
 			],
 			[
-			`<a href="https://freeltc.fun/?r=6679" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/freeltc.fun.jpg" alt="timebucsks" border="0" /></a>`,
+			`<a href="https://freeltc.fun/?r=6679" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/freeltc.fun.jpg" alt="freeltc.fun" border="0" /></a>`,
 			],
 			[
-			`<a href="https://adslab.me/?r=syaiftheoplover1925334" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/adslab.me.jpg" alt="timebucsks" border="0" /></a>`,
+			`<a href="https://adslab.me/?r=syaiftheoplover1925334" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/adslab.me.jpg" alt="adslab" border="0" /></a>`,
+			],
+			[
+			`<a href="https://starlavinia.com?ref=59552" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/starlavinia.JPG" alt="starlavinia" border="0" /></a>`,
 			],
         ];
 		
