@@ -213,6 +213,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://starlavinia.com?ref=59552" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/starlavinia.JPG" alt="starlavinia" border="0" /></a>`,
 			],
+			[
+			`<a href="https://banner.1eon-uno.top/?r=1236" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/banner.1eon-uno.top.jpg" alt="banner 1eon faucet" border="0" /></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
