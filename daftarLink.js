@@ -58,7 +58,7 @@ daftarLink = [['https://swrdfgd.github.io/RandomEnglishWords/','<img width="30px
 	['https://swrdfgd.github.io/LandOfKindness/','💗Land of Kindness'],
 	['https://swrdfgd.github.io/LandOfKnowledge/','🌐Land of Knowledge'],
 	['https://swrdfgd.github.io/RandomMatrix/','🎲🔢Random Matrix Generator'],
-	['http://cointiply.com/r/3xgnG','<img width="30px" height="auto" src="bitcoin.png"/>Free Bitcoin'],
+	//['http://cointiply.com/r/3xgnG','<img width="30px" height="auto" src="bitcoin.png"/>Free Bitcoin'],
 	['https://swrdfgd.github.io/RandomLinks/','🎲🌐Random Links Generator'],
 	['https://swrdfgd.github.io/RandomImageLottery/','🎰Random Image Lottery'],
 	['https://swrdfgd.github.io/Planets/','🪐Planets'],
