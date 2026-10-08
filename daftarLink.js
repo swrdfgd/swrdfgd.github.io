@@ -1,4 +1,4 @@
-daftarLink = [['https://random-english-words.blogspot.com/','<img width="30px" height="auto" src="ukflag.png"/>Random English Words'],
+daftarLink = [['https://swrdfgd.github.io/RandomEnglishWords/','<img width="30px" height="auto" src="ukflag.png"/>Random English Words'],
 	['https://swrdfgd.github.io/PunkRecords','📚Punk Records'],
 	['https://randomarabicwords.blogspot.com/','<img width="30px" height="auto" src="arabflag.png"/>Random Arabic Words'],
 
