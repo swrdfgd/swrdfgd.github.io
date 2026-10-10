@@ -219,7 +219,11 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://earnfreecoin.com/ref/XP6V0Q"><img src="https://earnfreecoin.com/banners/earnfreecoin-banner-728x90.jpg" alt="Leaderboard Banner" width="728" height="90" /></a>`,
 			`<a href="https://earnfreecoin.com/ref/XP6V0Q"><img src="https://earnfreecoin.com/banners/earnfreecoin-banner-300x250.jpg" alt="Medium Rectangle Banner" width="300" height="250" /></a>`,
-			]
+			],
+			[
+			`<a href="https://sproutworkers.icu/btc/?r=195" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/sproutworkers.icu1.jpg" alt="sproutworkers" border="0" /></a>`,
+			`<a href="https://sproutworkers.icu/btc/?r=195" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/sproutworkers.icu2.jpg" alt="sproutworkers" border="0" /></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
