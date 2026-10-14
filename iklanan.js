@@ -228,6 +228,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://sproutworkers.icu/btc/?r=195" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/sproutworkers.icu1.jpg" alt="sproutworkers" border="0" /></a>`,
 			`<a href="https://sproutworkers.icu/btc/?r=195" target="_blank"><img src="https://swrdfgd.github.io/moreBanner/sproutworkers.icu2.jpg" alt="sproutworkers" border="0" /></a>`,
 			],
+			[
+			`<a href="https://bitcoinsfor.me/?r=swordofgod"><image src="https://bitcoinsfor.me/banners/468x60.gif"></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
