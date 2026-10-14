@@ -231,6 +231,11 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://bitcoinsfor.me/?r=swordofgod"><image src="https://bitcoinsfor.me/banners/468x60.gif"></a>`,
 			],
+			[
+			`<a href="https://cryptoelite.top/?r=5570"><image src="https://img.cryptoelite.top/Cryptoelite/Cryptoelite-Internacional-468x60.png"></a>`,
+			`<a href="https://cryptoelite.top/?r=5570"><image src="https://img.cryptoelite.top/Cryptoelite/Cryptoelite-Internacional-728x90.png"></a>`,
+			`<a href="https://cryptoelite.top/?r=5570"><image src="https://img.cryptoelite.top/Cryptoelite/Cryptoelite-Internacional-300x250.png"></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
@@ -360,7 +365,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			],
 			[
 			`<a href="https://earnfreecoin.com/ref/XP6V0Q"><img src="https://earnfreecoin.com/banners/earnfreecoin-banner-300x250.jpg" alt="Medium Rectangle Banner" width="300" height="250" /></a>`,
-			]
+			],
+			[
+			`<a href="https://cryptoelite.top/?r=5570"><image src="https://img.cryptoelite.top/Cryptoelite/Cryptoelite-Internacional-300x250.png"></a>`,
+			],
 		];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
