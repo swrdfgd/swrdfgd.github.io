@@ -369,6 +369,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://cryptoelite.top/?r=5570"><image src="https://img.cryptoelite.top/Cryptoelite/Cryptoelite-Internacional-300x250.png"></a>`,
 			],
+			[
+			`<a href="https://ssp.profiton.com/signup?ri=9be74174-1c74-4e60-9b44-d551e0523230"><image src="https://swrdfgd.github.io/moreBanner/profitOn.jpg"></a>`,
+			],
 		];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
