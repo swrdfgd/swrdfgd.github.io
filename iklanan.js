@@ -236,6 +236,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://cryptoelite.top/?r=5570"><image src="https://img.cryptoelite.top/Cryptoelite/Cryptoelite-Internacional-728x90.png"></a>`,
 			`<a href="https://cryptoelite.top/?r=5570"><image src="https://img.cryptoelite.top/Cryptoelite/Cryptoelite-Internacional-300x250.png"></a>`,
 			],
+			[
+			`<a href="https://cryptoukr.in.ua/?r=14455"><image src="https://swrdfgd.github.io/moreBanner/cryptoukr.in.ua.jpg"></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
