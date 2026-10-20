@@ -242,6 +242,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://cryptoukr.in.ua/?r=14455"><image src="https://swrdfgd.github.io/moreBanner/cryptoukr.in.ua.jpg"></a>`,
 			],
+			[
+			`<a href="https://btcfaucet.in/?r=syaiftheoplover1925@gmail.com"><image src="https://swrdfgd.github.io/moreBanner/btcfaucet.in.jpg"></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
