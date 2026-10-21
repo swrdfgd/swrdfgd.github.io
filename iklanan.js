@@ -460,5 +460,77 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 		};
     document.head.appendChild(s);
-	}	
+	}
+	if (window.location.hostname === "swrdfgd.github.io"){
+			// Generate a random number from 1 to 12
+		const chance = Math.floor(Math.random() * 12) + 1; 
+		
+		if (chance === 1) {
+			// 1. Inject the widget.js (alcaptcha SDK) script into the <head>
+			const script = document.createElement('script');
+			script.src = "https://adslab.me/api/v1/alcaptcha/widget.js?v=1";
+			script.async = true;
+			script.defer = true;
+			document.head.appendChild(script);
+
+			// 2. Create the gate/overlay and append it to the <body>
+			const gateDiv = document.createElement('div');
+			gateDiv.id = 'captcha-gate';
+			// Fullscreen white overlay with high z-index to cover everything
+			gateDiv.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: white; z-index: 999999; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;';
+			
+			gateDiv.innerHTML = `
+				<h2>Security Verification</h2>
+				<p>Suspicious activity detected. Please complete the captcha below.</p>
+				<form id="captcha-form">
+					<!-- Replace with your actual API KEY -->
+					<div class="adslab-captcha" data-sitekey="odaOeWJOiJHLEt6MvsD2FL0D9Dc26k0ssXRAczBT"></div>
+					<br><br>
+					<button type="submit" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">Verify & Enter</button>
+				</form>
+			`;
+			document.body.appendChild(gateDiv);
+
+			// Disable scrolling on the background page
+			document.body.style.overflow = 'hidden';
+
+			// 3. Handle the form submission via Fetch API
+			document.getElementById('captcha-form').addEventListener('submit', function(e) {
+				e.preventDefault();
+				
+				const captchaResponse = document.querySelector('[name="alcaptcha-response"]').value;
+				
+				if (!captchaResponse) {
+					alert("Please complete the captcha first!");
+					return;
+				}
+
+				const formData = new FormData();
+				formData.append('alcaptcha-response', captchaResponse);
+
+				// Replace the URL with your actual Vercel endpoint
+				fetch('https://captcha-backend-three.vercel.app/api/verify.php', {
+					method: 'POST',
+					body: formData
+				})
+				.then(response => response.json()) // Ensure verify.php returns JSON
+				.then(data => {
+					if (data.success) {
+						// Remove the captcha overlay from the DOM
+						document.getElementById('captcha-gate').remove();
+						// Restore page scrolling
+						document.body.style.overflow = 'auto'; 
+					} else {
+						alert('Invalid or expired captcha. Please refresh the page.');
+					}
+				})
+				.catch(error => {
+					console.error('Error:', error);
+					alert('An error occurred during verification.');
+				});
+			});
+		}
+		// If the chance is not 1 (11/12 probability), the script does nothing
+		// and visitors can view the website normally.
+	}
 });
