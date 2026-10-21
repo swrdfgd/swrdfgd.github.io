@@ -486,7 +486,7 @@ document.addEventListener("DOMContentLoaded", function() {
 					<!-- Replace with your actual API KEY -->
 					<div class="adslab-captcha" data-sitekey="odaOeWJOiJHLEt6MvsD2FL0D9Dc26k0ssXRAczBT"></div>
 					<br><br>
-					<button type="submit" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">Verify & Enter</button>
+					<button type="submit" id="verify-btn" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">Verify & Enter</button>
 				</form>
 			`;
 			document.body.appendChild(gateDiv);
@@ -498,15 +498,18 @@ document.addEventListener("DOMContentLoaded", function() {
 			document.getElementById('captcha-form').addEventListener('submit', function(e) {
 				e.preventDefault();
 				
-				const captchaResponse = document.querySelector('[name="alcaptcha-response"]').value;
+				const submitBtn = document.getElementById('verify-btn');
+				const captchaInput = document.querySelector('[name="alcaptcha-response"]');
+				const captchaResponse = captchaInput ? captchaInput.value : '';
 				
 				if (!captchaResponse) {
 					alert("Please complete the captcha first!");
 					return;
 				}
 
-				const formData = new FormData();
-				formData.append('alcaptcha-response', captchaResponse);
+				// --- CEGAH DOUBLE CLICK ---
+				submitBtn.disabled = true;
+				submitBtn.innerText = "Verifying...";
 
 				// Replace the URL with your actual Vercel endpoint
 				fetch('https://captcha-backend-three.vercel.app/api/verify.php', {
@@ -514,7 +517,6 @@ document.addEventListener("DOMContentLoaded", function() {
 					headers: {
 						'Content-Type': 'application/x-www-form-urlencoded',
 					},
-					// Send the data as URL-encoded string
 					body: new URLSearchParams({
 						'alcaptcha-response': captchaResponse
 					}).toString()
@@ -529,12 +531,25 @@ document.addEventListener("DOMContentLoaded", function() {
 					} else {
 						// Display error details from the server
 						alert('Verification failed: ' + (data.error_detail || 'Invalid or expired captcha.'));
-						console.log("Debug Info:", data); // Check console (F12) for detailed errors
+						console.log("Debug Info:", data);
+
+						// --- RESET CAPTCHA WIDGET SUPAYA DAPAT TOKEN BARU ---
+						if (window.alcaptcha && typeof window.alcaptcha.reset === 'function') {
+							window.alcaptcha.reset();
+						}
+
+						// Kembalikan status tombol
+						submitBtn.disabled = false;
+						submitBtn.innerText = "Verify & Enter";
 					}
 				})
 				.catch(error => {
 					console.error('Error:', error);
 					alert('An error occurred while verifying the captcha.');
+					
+					// Kembalikan status tombol jika terjadi jaringan error
+					submitBtn.disabled = false;
+					submitBtn.innerText = "Verify & Enter";
 				});
 			});
 		}
