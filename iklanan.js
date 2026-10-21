@@ -511,22 +511,30 @@ document.addEventListener("DOMContentLoaded", function() {
 				// Replace the URL with your actual Vercel endpoint
 				fetch('https://captcha-backend-three.vercel.app/api/verify.php', {
 					method: 'POST',
-					body: formData
+					headers: {
+						'Content-Type': 'application/x-www-form-urlencoded',
+					},
+					// Send the data as URL-encoded string
+					body: new URLSearchParams({
+						'alcaptcha-response': captchaResponse
+					}).toString()
 				})
-				.then(response => response.json()) // Ensure verify.php returns JSON
+				.then(response => response.json())
 				.then(data => {
 					if (data.success) {
-						// Remove the captcha overlay from the DOM
+						// Remove the captcha overlay from the DOM if successful
 						document.getElementById('captcha-gate').remove();
 						// Restore page scrolling
 						document.body.style.overflow = 'auto'; 
 					} else {
-						alert('Invalid or expired captcha. Please refresh the page.');
+						// Display error details from the server
+						alert('Verification failed: ' + (data.error_detail || 'Invalid or expired captcha.'));
+						console.log("Debug Info:", data); // Check console (F12) for detailed errors
 					}
 				})
 				.catch(error => {
 					console.error('Error:', error);
-					alert('An error occurred during verification.');
+					alert('An error occurred while verifying the captcha.');
 				});
 			});
 		}
