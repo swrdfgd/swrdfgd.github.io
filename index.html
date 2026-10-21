@@ -328,6 +328,12 @@
                     <div class="project-title">Internet Hub</div>
                     <div class="project-desc">Coming soon :)</div>
                 </a>
+
+				 <!-- Link 9 -->
+                <a href="#" class="project-card" target="_blank" rel="noopener noreferrer"> 
+                    <div class="project-title">100 Days in the Void</div>
+                    <div class="project-desc">Insane All in One Games of Everything. Coming soon :)</div>
+                </a>
             </div>
 
             <div class="iklanan" data-format="horizontal" style="display: flex; justify-content: center; align-items: center; margin: 20px auto; max-width: 100%; overflow: hidden;"></div>
@@ -368,6 +374,17 @@
 	
 <!-- SCRIPT UNTUK FUNGSI PENCARIAN -->
     <script>
+	
+	function shuffleArray(array) {
+	  let shuffled = [...array]; // Buat salinan agar array asli tidak termodifikasi
+	  for (let i = shuffled.length - 1; i > 0; i--) {
+		// Pilih indeks acak dari 0 hingga i
+		const j = Math.floor(Math.random() * (i + 1));
+		// Tukar elemen pada indeks i dan j
+		[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+	  }
+	  return shuffled;
+	}
         // Masukkan semua link Anda di sini
         const allLinks = [
             { title: "Kianko Land", url: "https://swrdfgd.github.io/KiankoLand/" },
@@ -475,8 +492,8 @@
 			const grid = document.getElementById('projectsGrid');
 			
 			// Pastikan array allLinks sudah ada, lalu ambil 2 secara acak
-			let shuffled = [...allLinks].sort(() => 0.5 - Math.random());
-			let selectedTwo = shuffled.slice(0, 2);
+			let shuffledLinks = shuffleArray(allLinks);
+			let selectedTwo = shuffledLinks.slice(0, 3);
 
 			selectedTwo.forEach(item => {
 				const a = document.createElement('a');
