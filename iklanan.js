@@ -248,6 +248,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://bitcoinisok.com/bitcoinfaucets/?r=3Hh1kWDyy32iwhVis6qzKSHA5Ty3GYuMWU"><image src="https://swrdfgd.github.io/moreBanner/bitcoinisok.JPG"></a>`,
 			],
+			[
+			`<a href="https://abitcoin.love/?r=syaiftheoplover1925@gmail.com"><image src="https://swrdfgd.github.io/moreBanner/abitcoin.love.jpg"></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
