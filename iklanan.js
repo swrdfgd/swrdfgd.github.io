@@ -235,9 +235,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://bitcoinsfor.me/?r=swordofgod"><image src="https://bitcoinsfor.me/banners/468x60.gif"></a>`,
 			],
 			[
-			`<a href="https://cryptoelite.top/?r=5570"><image src="https://img.cryptoelite.top/Cryptoelite/Cryptoelite-Internacional-468x60.png"></a>`,
-			`<a href="https://cryptoelite.top/?r=5570"><image src="https://img.cryptoelite.top/Cryptoelite/Cryptoelite-Internacional-728x90.png"></a>`,
-			`<a href="https://cryptoelite.top/?r=5570"><image src="https://img.cryptoelite.top/Cryptoelite/Cryptoelite-Internacional-300x250.png"></a>`,
+			`<a href="https://cryptoelite.top/?r=5570"><image src="https://swrdfgd.github.io/moreBanner/Cryptoelite-Internacional-468x60.png"></a>`,
+			`<a href="https://cryptoelite.top/?r=5570"><image src="https://swrdfgd.github.io/moreBanner/Cryptoelite-Internacional-728x90.png"></a>`,
+			`<a href="https://cryptoelite.top/?r=5570"><image src="https://swrdfgd.github.io/moreBanner/Cryptoelite-Internacional-300x250.png"></a>`,
 			],
 			[
 			`<a href="https://cryptoukr.in.ua/?r=14455"><image src="https://swrdfgd.github.io/moreBanner/cryptoukr.in.ua.jpg"></a>`,
@@ -250,6 +250,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			],
 			[
 			`<a href="https://abitcoin.love/?r=syaiftheoplover1925@gmail.com"><image src="https://swrdfgd.github.io/moreBanner/abitcoin.love.jpg"></a>`,
+			],
+			[
+			`<a href="https://cointoshi.top?ref=RZXGWOKDXO"><image src="https://swrdfgd.github.io/moreBanner/cointoshi.top.jpg"></a>`,
 			],
         ];
 		
@@ -382,10 +385,13 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://earnfreecoin.com/ref/XP6V0Q"><img src="https://earnfreecoin.com/banners/earnfreecoin-banner-300x250.jpg" alt="Medium Rectangle Banner" width="300" height="250" /></a>`,
 			],
 			[
-			`<a href="https://cryptoelite.top/?r=5570"><image src="https://img.cryptoelite.top/Cryptoelite/Cryptoelite-Internacional-300x250.png"></a>`,
+			`<a href="https://cryptoelite.top/?r=5570"><image src="https://swrdfgd.github.io/moreBanner/Cryptoelite-Internacional-300x250.png"></a>`,
 			],
 			[
 			`<a href="https://ssp.profiton.com/signup?ri=9be74174-1c74-4e60-9b44-d551e0523230"><image src="https://swrdfgd.github.io/moreBanner/profitOn.jpg"></a>`,
+			],
+			[
+			`<a href="https://cointoshi.top?ref=RZXGWOKDXO"><image src="https://swrdfgd.github.io/moreBanner/cointoshi.top.jpg"></a>`,
 			],
 		];
 		
