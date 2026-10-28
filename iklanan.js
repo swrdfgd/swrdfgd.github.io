@@ -257,6 +257,11 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://invite.sng.link/Dhazd/mz3p?psn=SWOR-U5M&psid=b3a4cba6-fe7a-4734-9e4d-5ca57a452c19"><image src="https://swrdfgd.github.io/moreBanner/playout.jpg"></a>`,
 			],
+			[
+			`<a href="https://exclick.pro/?i=758019" target="_blank"><img src="https://b8c4.s7-expresswallet.pro/img/en/468x60.gif" width="468" height="60" border="0" /></a>`,
+			`<a href="https://exclick.pro/?i=758019" target="_blank"><img src="https://b8c4.s7-expresswallet.pro/img/en/728x90.gif" width="728" height="90" border="0" /></a>`,
+			`<a href="https://exclick.pro/?i=758019" target="_blank"><img src="https://b8c4.s7-expresswallet.pro/img/en/125x125.gif" width="125" height="125" border="0" /></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
@@ -395,6 +400,9 @@ document.addEventListener("DOMContentLoaded", function() {
 			],
 			[
 			`<a href="https://cointoshi.top?ref=RZXGWOKDXO"><image src="https://swrdfgd.github.io/moreBanner/cointoshi.top.jpg"></a>`,
+			],
+			[
+			`<a href="https://exclick.pro/?i=758019" target="_blank"><img src="https://b8c4.s7-expresswallet.pro/img/en/125x125.gif" width="125" height="125" border="0" /></a>`,
 			],
 		];
 		
