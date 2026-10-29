@@ -335,6 +335,61 @@
                     <div class="project-desc">Insane All in One Games of Everything. Coming soon :)</div>
                 </a>
             </div>
+			
+<!-- KNK Land Random Article Card -->
+<div class="knk-card random-article-card" id="randomArticleContainer">
+    <p>loading...</p>
+</div>
+
+<style>
+/* Card Style */
+.knk-card.random-article-card {
+    background-color: #fffcf8;
+    border: 1px solid #fde0c8;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.knk-card.random-article-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 122, 34, 0.1);
+}
+
+.knk-card.random-article-card a {
+    text-decoration: none;
+    display: block;
+}
+
+.knk-card.random-article-card .random-thumbnail {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+}
+
+.knk-card.random-article-card h3 {
+    color: #ff7a22;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+
+.knk-card.random-article-card p {
+    color: #7d8b99;
+    font-size: 14px;
+    margin: 0;
+}
+</style>
+
 
             <div class="iklanan" data-format="horizontal" style="display: flex; justify-content: center; align-items: center; margin: 20px auto; max-width: 100%; overflow: hidden;"></div>
             <!-- BEGIN AADS AD UNIT 2450840 -->
@@ -537,6 +592,56 @@
             localStorage.setItem('theme', 'light');
         }
     });
+</script>
+
+<script>
+var domainBlogger = "https://www.knkland.com";
+
+// Get the total number of posts
+function randomposts(json) {
+    var totalPosts = json.feed.openSearch$totalResults.$t;
+    if (totalPosts > 0) {
+        var randomIndex = Math.floor(Math.random() * totalPosts) + 1;
+        
+        var script = document.createElement('script');
+        script.src = domainBlogger + '/feeds/posts/default?alt=json-in-script&start-index=' + randomIndex + '&max-results=1&callback=showRandomPost';
+        document.body.appendChild(script);
+    } else {
+        document.getElementById('randomArticleContainer').innerHTML = "<p>No articles found.</p>";
+    }
+}
+
+// Display the random post
+function showRandomPost(json) {
+    if (json.feed.entry && json.feed.entry.length > 0) {
+        var entry = json.feed.entry[0];
+        var title = entry.title.$t;
+        var link = "";
+        var thumbnail = "https://via.placeholder.com/400x225?text=No+Image"; 
+
+        for (var i = 0; i < entry.link.length; i++) {
+            if (entry.link[i].rel == "alternate") {
+                link = entry.link[i].href;
+                break;
+            }
+        }
+
+        if ("media$thumbnail" in entry) {
+            thumbnail = entry.media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/, "/s400");
+        }
+
+        var container = document.getElementById('randomArticleContainer');
+        container.innerHTML = '<a href="' + link + '" target="_blank">' +
+                              '<img src="' + thumbnail + '" alt="' + title + '" class="random-thumbnail" />' +
+                              '<h3>' + title + '</h3>' +
+                              '</a>';
+    }
+}
+
+// Initialize by fetching max-results=0 to get total posts count
+var initScript = document.createElement('script');
+initScript.src = domainBlogger + '/feeds/posts/default?alt=json-in-script&max-results=0&callback=randomposts';
+document.body.appendChild(initScript);
 </script>
 
 </body>
