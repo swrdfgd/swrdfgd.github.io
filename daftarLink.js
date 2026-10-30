@@ -72,4 +72,5 @@ daftarLink = [['https://swrdfgd.github.io/RandomEnglishWords/','<img width="30px
 	['https://swrdfgd.github.io/PokemonOnet/','<img width="30px" height="auto" src="pokeball.png"/>Pokemon Onet'],
 	['https://swrdfgd.github.io/AdvancedRNGEngine/','🤖🎰Advanced RNG Engine'],
 	['https://swrdfgd.github.io/FourierSeriesVisual/','∿Interactive Fourier Series Visualization'],
+	['https://swrdfgd.github.io/RanWeb/','🎲🌐Random Website Generator'],
 	];
