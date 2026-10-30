@@ -248,6 +248,34 @@
 		body.dark-mode .text-dark-mode {
 			display: block;
 		}
+		
+		.qogs {
+			position: absolute;
+			bottom: 10px; /* Nilai diperkecil agar tombol turun */
+			right: 15px;
+			
+			font-family: "Courier New", Courier, monospace;
+			font-size: 0.75rem;
+			font-weight: bold;
+			color: #e65100;
+			background-color: #fff3e0;
+			padding: 6px 12px;
+			border: 1px dashed #ffb74d; 
+			border-radius: 4px;
+			text-decoration: none;
+			box-shadow: 2px 2px 0px #ffe0b2;
+			z-index: 10;
+			
+			transition: all 0.2s ease-in-out;
+		}
+
+		.qogs:hover {
+			background-color: #ffb74d;
+			color: #ffffff;
+			border-style: solid;
+			box-shadow: 2px 2px 0px #ff9800;
+			transform: translate(-1px, -1px);
+		}
     </style>
 </head>
 <body>
@@ -299,11 +327,19 @@
                     <div class="project-desc">For curious explorers</div>
                 </a>
 				
-                <!-- Link 3 -->
-                <a href="https://swrdfgd.github.io/RandomWebsite/" class="project-card" target="_blank" rel="noopener noreferrer">
-                    <div class="project-title">Random Website Lists</div>
-                    <div class="project-desc">Explore the entire internet randomly.</div>
-                </a>
+				<!-- Link 3 -->
+				<div class="project-card" style="position: relative; padding-bottom: 65px;">
+					<!-- Link Utama -->
+					<a href="https://swrdfgd.github.io/RandomWebsite/" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; color: inherit;">
+						<div class="project-title">Random Website Lists</div>
+						<div class="project-desc">Explore the entire internet randomly. Lists of Random Websites</div>
+					</a>
+					
+					<!-- Link Tambahan -->
+					<a href="https://swrdfgd.github.io/RanWeb" class="qogs" target="_blank" rel="noopener noreferrer">
+						or just pick one website randomly
+					</a>
+				</div>
 
                 <!-- Link 4 -->
                 <a href="https://swrdfgd.github.io/mathZpace" class="project-card" target="_blank" rel="noopener noreferrer">
