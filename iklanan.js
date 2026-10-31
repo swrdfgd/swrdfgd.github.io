@@ -262,6 +262,12 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://exclick.pro/?i=758019" target="_blank"><img src="https://b8c4.s7-expresswallet.pro/img/en/728x90.gif" width="728" height="90" border="0" /></a>`,
 			`<a href="https://exclick.pro/?i=758019" target="_blank"><img src="https://b8c4.s7-expresswallet.pro/img/en/125x125.gif" width="125" height="125" border="0" /></a>`,
 			],
+			[
+			`<a href="https://luckywatch.pro/u/otkun"><image src="https://swrdfgd.github.io/moreBanner/468px_en.jpg"></a>`,
+			`<a href="https://luckywatch.pro/u/otkun"><image src="https://swrdfgd.github.io/moreBanner/468px_ru.jpg"></a>`,
+			`<a href="https://luckywatch.pro/u/otkun"><image src="https://swrdfgd.github.io/moreBanner/728px_en.jpg"></a>`,
+			`<a href="https://luckywatch.pro/u/otkun"><image src="https://swrdfgd.github.io/moreBanner/728px_ru.jpg"></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
@@ -403,6 +409,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			],
 			[
 			`<a href="https://exclick.pro/?i=758019" target="_blank"><img src="https://b8c4.s7-expresswallet.pro/img/en/125x125.gif" width="125" height="125" border="0" /></a>`,
+			],
+			[
+			`<a href="https://luckywatch.pro/u/otkun"><image src="https://swrdfgd.github.io/moreBanner/200px_en.jpg"></a>`,
+			`<a href="https://luckywatch.pro/u/otkun"><image src="https://swrdfgd.github.io/moreBanner/200px_ru.jpg"></a>`,
 			],
 		];
 		
