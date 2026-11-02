@@ -271,6 +271,13 @@ document.addEventListener("DOMContentLoaded", function() {
 			`<a href="https://luckywatch.pro/u/otkun"><image src="https://swrdfgd.github.io/moreBanner/728px_en.jpg"></a>`,
 			`<a href="https://luckywatch.pro/u/otkun"><image src="https://swrdfgd.github.io/moreBanner/728px_ru.jpg"></a>`,
 			],
+			[
+			`<a href="https://got-mining.com/?ref=swordofgod"><img src="https://got-mining.com/GOT728.gif"></a>`,
+			`<a href="https://got-mining.com/?ref=swordofgod"><img src="https://got-mining.com/GOT468.gif"></a>`,
+			`<a href="https://got-mining.com/?ref=swordofgod"><img src="https://got-mining.com/GOT300.gif"></a>`,
+			`<a href="https://got-mining.com/?ref=swordofgod"><img src="https://got-mining.com/GOT250.gif"></a>`,
+			`<a href="https://got-mining.com/?ref=swordofgod"><img src="https://got-mining.com/GOT200X200.gif"></a>`,
+			],
         ];
 		
 		if (window.location.hostname === "swrdfgd.github.io"){
@@ -416,6 +423,14 @@ document.addEventListener("DOMContentLoaded", function() {
 			[
 			`<a href="https://luckywatch.pro/u/otkun"><image src="https://swrdfgd.github.io/moreBanner/200px_en.jpg"></a>`,
 			`<a href="https://luckywatch.pro/u/otkun"><image src="https://swrdfgd.github.io/moreBanner/200px_ru.jpg"></a>`,
+			],
+			[
+			`<a href="https://got-mining.com/?ref=swordofgod"><img src="https://got-mining.com/GOT300.gif"></a>`,
+			`<a href="https://got-mining.com/?ref=swordofgod"><img src="https://got-mining.com/GOT250.gif"></a>`,
+			`<a href="https://got-mining.com/?ref=swordofgod"><img src="https://got-mining.com/GOT240.gif"></a>`,
+			`<a href="https://got-mining.com/?ref=swordofgod"><img src="https://got-mining.com/GOT200X200.gif"></a>`,
+			`<a href="https://got-mining.com/?ref=swordofgod"><img src="https://got-mining.com/GOT200.gif"></a>`,
+			`<a href="https://got-mining.com/?ref=swordofgod"><img src="https://got-mining.com/GOT160.gif"></a>`,
 			],
 		];
 		
