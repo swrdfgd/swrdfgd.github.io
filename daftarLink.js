@@ -1,17 +1,17 @@
-daftarLink = [['https://swrdfgd.github.io/RandomEnglishWords/','<img width="30px" height="auto" src="ukflag.png"/>Random English Words'],
+daftarLink = [['https://swrdfgd.github.io/RandomEnglishWords/','<img width="30px" height="auto" src="https://swrdfgd.github.io/KiankoLand/ukflag.png"/>Random English Words'],
 	['https://swrdfgd.github.io/PunkRecords','📚Punk Records'],
-	['https://randomarabicwords.blogspot.com/','<img width="30px" height="auto" src="arabflag.png"/>Random Arabic Words'],
+	['https://randomarabicwords.blogspot.com/','<img width="30px" height="auto" src="https://swrdfgd.github.io/KiankoLand/arabflag.png"/>Random Arabic Words'],
 
 	['https://swrdfgd.github.io/RandomYoutubeVideos/','📺Random Youtube Video'],
 	['https://swrdfgd.github.io/BelajarMembaca/','📖Belajar Membaca Huruf Latin Generator'],
 	//['https://www.knkland.com/p/ruang-koding.html','💻Ruang Koding'],
 	//['https://internetmainmenu.blogspot.com/','🌐Internet Main Menu'],
-	['https://swrdfgd.github.io/HiraganaPractice/','<img width="30px" height="auto" src="jpflag.png"/>Hiragana Practice'],
-	['https://swrdfgd.github.io/KatakanaPractice/','<img width="30px" height="auto" src="jpflag.png"/>Katakana Practice'],
+	['https://swrdfgd.github.io/HiraganaPractice/','<img width="30px" height="auto" src="https://swrdfgd.github.io/KiankoLand/jpflag.png"/>Hiragana Practice'],
+	['https://swrdfgd.github.io/KatakanaPractice/','<img width="30px" height="auto" src="https://swrdfgd.github.io/KiankoLand/jpflag.png"/>Katakana Practice'],
 	['https://swrdfgd.github.io/RandomWebsite/','🌐🏄Random Website List'],
 
 
-	['https://swrdfgd.github.io/HiraKataPractice/','<img width="30px" height="auto" src="jpflag.png"/>Hiragana and Katakana Practice'],
+	['https://swrdfgd.github.io/HiraKataPractice/','<img width="30px" height="auto" src="https://swrdfgd.github.io/KiankoLand/jpflag.png"/>Hiragana and Katakana Practice'],
 	['https://swrdfgd.github.io/StringPermutation','🔡🔄String Permutations Generator'],
 	['https://swrdfgd.github.io/RandomImgur/','🖼Random Imgur Image Generator'],
 
@@ -58,7 +58,7 @@ daftarLink = [['https://swrdfgd.github.io/RandomEnglishWords/','<img width="30px
 	['https://swrdfgd.github.io/LandOfKindness/','💗Land of Kindness'],
 	['https://swrdfgd.github.io/LandOfKnowledge/','🌐Land of Knowledge'],
 	['https://swrdfgd.github.io/RandomMatrix/','🎲🔢Random Matrix Generator'],
-	//['http://cointiply.com/r/3xgnG','<img width="30px" height="auto" src="bitcoin.png"/>Free Bitcoin'],
+
 	['https://swrdfgd.github.io/RandomLinks/','🎲🌐Random Links Generator'],
 	['https://swrdfgd.github.io/RandomImageLottery/','🎰Random Image Lottery'],
 	['https://swrdfgd.github.io/Planets/','🪐Planets'],
@@ -69,8 +69,14 @@ daftarLink = [['https://swrdfgd.github.io/RandomEnglishWords/','<img width="30px
 	['https://swrdfgd.github.io/LandOfFreedom','🕊️Land of Freedom'],
 	['https://swrdfgd.github.io/RandomInstagram','🦋⃝Random Instagram Reel'],
 	['https://swrdfgd.github.io/RandomWiki','🚀Random Wiki Article'],
-	['https://swrdfgd.github.io/PokemonOnet/','<img width="30px" height="auto" src="pokeball.png"/>Pokemon Onet'],
+	['https://swrdfgd.github.io/PokemonOnet/','<img width="30px" height="auto" src="https://swrdfgd.github.io/KiankoLand/pokeball.png"/>Pokemon Onet'],
 	['https://swrdfgd.github.io/AdvancedRNGEngine/','🤖🎰Advanced RNG Engine'],
 	['https://swrdfgd.github.io/FourierSeriesVisual/','∿Interactive Fourier Series Visualization'],
 	['https://swrdfgd.github.io/RanWeb/','🎲🌐Random Website Generator'],
+	
+	
+	//ucet
+	['https://cointoshi.top/?ref=RZXGWOKDXO','<img width="30px" height="auto" src="https://swrdfgd.github.io/KiankoLand/bitcoin.png"/> Free Crypto'],
+	['https://timebucks.com/?refID=230175427','💰 Get Paid for Simple Tasks'],
+	
 	];
