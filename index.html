@@ -308,6 +308,8 @@
 
         <!-- Kumpulan Link -->
         <main>
+			<div id="dynamic-injection-zone"></div>
+			
             <div id="projectsGrid" class="projects-grid">
                 
                 <!-- Link 1 -->
@@ -681,6 +683,27 @@ function showRandomPost(json) {
 var initScript = document.createElement('script');
 initScript.src = domainBlogger + '/feeds/posts/default?alt=json-in-script&max-results=0&callback=randomposts';
 document.body.appendChild(initScript);
+</script>
+
+<!-- Skrip Pengambil Konten -->
+<script>
+  // Siapkan library Instagram secara global
+  const igScript = document.createElement('script');
+  igScript.src = "//www.instagram.com/embed.js";
+  document.body.appendChild(igScript);
+
+  // Panggil endpoint Vercel Anda
+  fetch('https://swrdfgd-api-git-main-swrdfgds-projects.vercel.app/api/random-content')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('dynamic-injection-zone').innerHTML = html;
+        
+        // Jika konten yang disuntikkan kebetulan adalah Reel, render ulang widget Instagram
+        if (window.instgrm) { 
+            window.instgrm.Embeds.process(); 
+        }
+    })
+    .catch(err => console.error('Error fetching random content:', err));
 </script>
 
 </body>
