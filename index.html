@@ -693,7 +693,7 @@ document.body.appendChild(initScript);
   document.body.appendChild(igScript);
 
   // Panggil endpoint Vercel Anda
-  fetch('https://swrdfgd-api-git-main-swrdfgds-projects.vercel.app/api/random-content')
+  fetch('https://swrdfgd-api.vercel.app/api/random-content')
     .then(response => response.text())
     .then(html => {
         document.getElementById('dynamic-injection-zone').innerHTML = html;
